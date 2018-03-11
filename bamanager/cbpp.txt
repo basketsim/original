@@ -1,0 +1,321 @@
+<?
+
+	$szRecomendedUrl	= "www.basketsim.com";
+	$szAgentName		= "BAM 1.1";
+	$BSUSERNAME		= "bot_user";
+	$BSPASSWORD		= "figulefagule";
+
+	//////////////////////////////////////////////////////////////////////////////////////
+	//	login()
+	//////////////////////////////////////////////////////////////////////////////////////
+	function login()
+	{
+		global $szCookie, $szRecomendedUrl, $szAgentName, $BSUSERNAME, $BSPASSWORD;
+
+		$u	= $BSUSERNAME;
+		$p	= $BSPASSWORD;
+
+		$fp	= @fsockopen($szRecomendedUrl, 80, $errno, $errstr, 20);
+		if(!$fp)
+		{
+			return "ERROR";
+		}
+		$szGet	 = "GET /cbpp/cbpp.php?option=login&username=$u&password=$p HTTP/1.0\r\n";
+		$szGet	.= "Host: $szRecomendedUrl\r\n";
+		$szGet	.= "User-Agent: $szAgentName \r\n";
+		$szGet	.= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$szGet	.= "Connection: close\r\n\r\n";	
+		$nBytes = @fputs($fp, $szGet);
+		$szResponse	= "";
+		while (!@feof($fp))
+		{
+			$szResponse .= fgets($fp, 1024);
+		}
+
+		@fclose($fp);
+
+		if(!strstr($szResponse,"200 OK"))
+		{
+			return "ERROR";
+		}
+
+		if(!strstr($szResponse,"<ActionSuccessful>True</ActionSuccessful>"))
+		{
+			return "ERROR"; // invalid username and password
+		} 
+
+		// reading cookie from headers
+
+		$arrTmp	= explode("\r\n",$szResponse);
+		if(is_array($arrTmp))
+		{
+			for($i=0; $i < count($arrTmp); $i++)
+			{
+				if(strstr($arrTmp[$i],":"))
+				{
+					$arrHd	= explode(":",$arrTmp[$i]);
+					if(trim(strtolower($arrHd[0])) == "set-cookie")
+					{
+						$nPos		= strpos($arrHd[1],";");
+						$szCookie	= trim(substr($arrHd[1], 0, $nPos));
+					}
+				}
+			}
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	logout()																			
+	////////////////////////////////////////////////////////////////////////////////////////
+	function logout()
+	{
+		return getResponse("/cbpp/cbpp.php?option=logout");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read countries 
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getCountries()
+	{
+		return getResponse("/cbpp/cbpp.php?option=countries");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read team matches using the team id													
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getMatches($teamid, $date = "")
+	{
+		return getResponse("/cbpp/cbpp.php?option=matches&teamid=$teamid&lastmatchdate=$date");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read national team matches using the national team name								
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getNationalTeamMatches($country, $date = "")
+	{
+		return getResponse("/cbpp/cbpp.php?option=nationalteammatches&country=$country&lastmatchdate=$date");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read team matches using the team id - debug version									
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getMatchesDebug($teamid, $date = "")
+	{
+		return getResponse("/cbpp/cbpp.php?option=matchesdebug&teamid=$teamid&lastmatchdate=$date");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read match details
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getMatchDetails($matchid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=matchdetails&matchid=$matchid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read national team match details
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getNationalTeamMatchDetails($matchid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=nationalteammatchdetails&matchid=$matchid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read player transfer history
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getTransferHistory($teamid, $playerid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=transferhistory&teamid=$teamid&playerid=$playerid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read match report
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getMatchReport($matchid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=matchreport&matchid=$matchid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read national team match report
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getNationalTeamMatchReport($matchid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=nationalteammatchreport&matchid=$matchid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read match stats
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getMatchStats($matchid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=matchstats&matchid=$matchid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read national team match stats
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getNationalTeamMatchStats($matchid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=nationalteammatchstats&matchid=$matchid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read team players using the team id													
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getPlayers($teamid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=players&teamid=$teamid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read national team players															
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getNationalTeamPlayers($country)
+	{
+		return getResponse("/cbpp/cbpp.php?option=nationalteamplayers&country=$country");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read team details info using the team id											
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getTeamDetails($teamid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=teamdetails&teamid=$teamid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	labels
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getLabels($lang)
+	{
+		return getResponse("/cbpp/cbpp.php?option=labels&language=$lang");
+	}
+	
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	training
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getTraining($t)
+	{
+		return getResponse("/cbpp/cbpp.php?option=training&teamid=$t");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	debug
+	////////////////////////////////////////////////////////////////////////////////////////
+	function debug($u)
+	{
+		return getResponse("/cbpp/cbpp.php?option=debug&teamid=$u&userid=$u&arenaid=$u");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read team details info using the user id											
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getTeamDetailsB($userid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=teamdetails&userid=$userid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read arena details info using the arena id											
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getArenaDetails($arenaid)
+	{
+		return getResponse("/cbpp/cbpp.php?option=arenadetails&arenaid=$arenaid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	check if a CBPP code has been set for the given $u
+	////////////////////////////////////////////////////////////////////////////////////////
+	function checkSecurityCode($u)
+	{
+		$szResponse = getResponse("/cbpp/cbpp.php?option=checkcbppcode&username=$u");
+		if(strstr($szResponse,"<ActionSuccessful>True</ActionSuccessful>"))
+		{
+			$szResponse	= explode("<UserID>", $szResponse);
+			$szResponse	= $szResponse[1];
+			$szResponse	= explode("</UserID>", $szResponse);
+			$UserID	= $szResponse[0];
+			return $UserID;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	getResponse()																		
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getResponse($szFromPage)
+	{
+		global $szRecomendedUrl, $szCookie, $szAgentName;
+		$fp	= @fsockopen($szRecomendedUrl, 80, $errno, $errstr, 20);
+		if(!$fp)
+		{
+			return "ERROR";
+		}
+		$szGet	 = "GET $szFromPage HTTP/1.0\r\n";
+		$szGet	.= "Host: $szRecomendedUrl\r\n";
+		$szGet	.= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$szGet	.= "Accept-Encoding: gzip, deflate\r\n";
+		$szGet	.= "User-Agent: $szAgentName \r\n";
+		$szGet	.= "Cookie: $szCookie\r\n";
+		$szGet	.= "Connection: close\r\n\r\n";	
+		
+		$nBytes = @fputs($fp, $szGet);
+		$szResponse	= "";
+		while (!@feof($fp))
+		{
+			$szResponse .= @fgets($fp, 1024);
+		}
+
+		@fclose($fp);
+		//die($szResponse);
+		if(!strstr($szResponse,"200 OK"))
+		{
+			return "ERROR";
+		}
+
+		$nPos	= strpos($szResponse,"<?xml");
+		return substr($szResponse, $nPos);
+	}
+	
+	//////////////////////////////////////////////////////////////////////////////////////
+	//	checkSignup()
+	//////////////////////////////////////////////////////////////////////////////////////
+	function checkSignup($u, $p)
+	{
+		global $szCookie, $szRecomendedUrl, $szAgentName, $BSUSERNAME, $BSPASSWORD;
+
+		$fp	= @fsockopen($szRecomendedUrl, 80, $errno, $errstr, 20);
+		if(!$fp)
+		{
+			return "ERROR";
+		}
+		$szGet	 = "GET /cbpp/cbpp.php?option=login&username=$u&password=$p HTTP/1.0\r\n";
+		$szGet	.= "Host: $szRecomendedUrl\r\n";
+		$szGet	.= "User-Agent: $szAgentName \r\n";
+		$szGet	.= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$szGet	.= "Connection: close\r\n\r\n";	
+		$nBytes = @fputs($fp, $szGet);
+		$szResponse	= "";
+		while (!@feof($fp))
+		{
+			$szResponse .= fgets($fp, 1024);
+		}
+
+		@fclose($fp);
+
+		if(!strstr($szResponse,"200 OK"))
+		{
+			return 1;
+		}
+
+		if(strstr($szResponse,"<ActionSuccessful>False</ActionSuccessful>"))
+		{
+			return 2; // invalid username and password
+		}
+		return 0;
+	}
+?>

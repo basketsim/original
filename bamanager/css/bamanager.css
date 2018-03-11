@@ -1,0 +1,136 @@
+.content{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;	
+}
+
+.content a{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;	
+}
+
+.register:visited, .register:link{
+font: 11px verdana, helvetica, arial, sans-serif; 
+font-weight: bold;
+text-decoration: underline; 
+color: #FFCC66; 
+}
+.register:hover{ 
+font: 11px verdana, helvetica, arial, sans-serif; 
+font-weight: bold;
+color: #FFCC66; 
+text-decoration: none; 
+}
+.register:active{
+font: 11px verdana, helvetica, arial, sans-serif; 
+font-weight: bold;
+color: #FFCC66;
+}
+
+A:visited, A:link{
+font: normal 10px verdana, helvetica, arial, sans-serif; 
+text-decoration: underline; 
+color: #F76118; 
+}
+A:hover{ 
+font: normal 10px verdana, helvetica, arial, sans-serif; 
+color: #F76118; 
+text-decoration: none; 
+}
+A:active{
+font: normal 10px verdana, helvetica, arial, sans-serif; 
+color: #F76118;
+}
+.title{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;	
+	font-weight: bold;
+}
+
+h2{
+font: bold 10px verdana, helvetica, arial, sans-serif;
+text-decoration: none;
+padding: 7px 0px 1px 0px;
+border: 0px  #FFCC66 solid;
+border-bottom-width: 2px;
+color: #F76118;
+width: 300px;
+margin: 0px 0px 2px 0px;
+}
+
+h3{
+font: bold 10px verdana, helvetica, arial, sans-serif;
+text-decoration: none;
+padding: 7px 0px 1px 0px;
+border: 0px  #FFCC66 solid;
+border-bottom-width: 2px;
+color: #F76118;
+width: 70%;
+margin: 0px 0px 2px 0px;
+}
+
+     .error {
+           font-weight : bold;
+           font-size : 10px;
+           color : #ff0000;
+           font-family : verdana, arial, helvetica, geneva, sans-serif;
+      }
+
+.buttons a:link, .buttons a:visited,.buttons a:active {
+background-image :url(./hd1.jpg);
+color:#000000;
+text-decoration: none;
+padding-top:2px;
+display:block;
+font-size: 10px;
+height:18px;
+border-left: 1px solid #D6D2C2;
+}
+
+
+.buttons a:hover {
+background-image : url(./hd2.jpg);
+color:#000000;
+text-decoration: none;
+display: block;
+font-size: 10px;
+padding-top:2px;
+height:18px;
+border-left: 1px solid #D6D2C2;
+}
+
+.bselected a:link, .bselected a:visited, .bselected a:active, .bselected a:hover {
+	background-image :url(./hd2.jpg);
+	color:#000000;
+	text-decoration: none;
+	display:block;
+	font-size: 10px;
+	padding-top:2px;
+	height:18px;
+	border-left: 1px solid #D6D2C2;
+}
+
+.bunselected{
+	background-image :url(./hd1.jpg);
+	color:#000000;
+	text-decoration: none;
+	/*display:block;*/
+	font-size: 10px;
+	padding-top:2px;
+	height:18px;
+	border-left: 1px solid #D6D2C2;
+}
+
+.nochange{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.changeup{
+	background-color: #008000;
+	color: #FFFFFF;
+}
+
+.changedown{
+	background-color: #FF0000;
+	color: #FFFFFF;
+}

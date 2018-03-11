@@ -1,0 +1,1835 @@
+<?php
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//BASIC INSTRUCTIONS - READ THEM CAREFULLY
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//0) Work in notepad (don't use Word!).
+//1) Always leave capitals/caps locks as they are (example 1: LATEST NEWS, translate it and leave all letters big; example 2: if it says Player, then translate and leave the first letter big!).
+//2) Always leave variables as they are (for example: $langmark226 must always remain the same, don't change it!).
+//3) Always leave punctation as it is, if there is no full stop at the end of the scentence, don't add it, if there is one, don't remove it!
+//4) Same goes for quotes (example: "translation") that must stay at the start and at the end of each expression.
+//5) Try to find words with similar lenght (especially try to avoid translating very short words with very long expressions!).
+//6) Some expressions are commented (for example "//stands for points") - leave comments untranslated
+//7) When you are unsure about certain word/expression, always consult other translators!
+//8) Be very precise to avoid grammatical errors!
+//9) Try to check on Basketsim the page you are currently translating (for example players page). This will make translations better!
+//10) If you don't understand these instructions consult other translators.
+//Thanks for the effort!
+//Adiego
+
+
+//ARENA
+
+$langmark001 = "YOUR ARENA";
+$langmark002 = "Investment must be a positive number!";
+$langmark003 = "Court side capacity";
+$langmark004 = "Court end capacity";
+$langmark005 = "Upper level capacity";
+$langmark006 = "Number of VIP boxes";
+$langmark007 = "Total Capacity";
+$langmark008 = "Due to construction capacity is limited to";
+$langmark009 = "Arena should be ready around";
+$langmark010 = "Cheerleaders influence the number of spectators. At the end of the season top cheerleading squads are awarded. When investing, don't forget that too much money can spoil the girls!";
+$langmark011 = "Invest to the cheerleading squad";
+$langmark012 = "Change";
+$langmark013 = "money invested at each economy update";
+$langmark014 = "Improve arena";
+$langmark015 = "New capacity";
+$langmark016 = "Change name";
+$langmark017 = "New name";
+$langmark018 = "Rename!";
+$langmark019 = "it costs 25.000 &euro; to rename arena";
+$langmark020 = "Cheerleaders squad";
+$langmark021 = "Current investment";
+$langmark022 = "Season total";
+$langmark023 = "hateful";
+$langmark024 = "bitchy";
+$langmark025 = "irritated";
+$langmark026 = "nice";
+$langmark027 = "happy";
+$langmark028 = "grateful";
+$langmark029 = "cheerful";
+$langmark030 = "blossoming";
+$langmark031 = "Attitude";
+$langmark032 = "Top 10 squads";
+
+$langmark047 = "Court side capacity";
+$langmark048 = "Court end capacity";
+$langmark049 = "Upper level capacity";
+$langmark050 = "Number of VIP boxes";
+$langmark051 = "Total Capacity";
+$langmark052 = "Due to construction capacity is limited to";
+$langmark053 = "Improve arena";
+$langmark054 = "Enter the amount of additional places. To remove the seats enter negative figures. You will be presented with workplan and costs before final confirmation.";
+$langmark055 = "The numbers please!";
+$langmark056 = "Illegal input!";
+$langmark057 = "You cannot have less then zero seats";
+$langmark058 = "Your arena is already under construction";
+$langmark059 = "Go back";
+$langmark060 = "You must have positive balance to order construction";
+$langmark061 = "Construction company refused your order as unrealistic";
+$langmark062 = "Court side";
+$langmark063 = "Court end";
+$langmark064 = "Upper level";
+$langmark065 = "VIP boxes";
+$langmark066 = "New capacity";
+$langmark067 = "Associated costs";
+$langmark068 = "Constructor";
+$langmark069 = "New seats";
+$langmark070 = "Level upgrade";
+$langmark071 = "Total costs";
+$langmark072 = "this type of work will take";
+$langmark073 = "days to complete";
+$langmark074 = "Confirm order now!";
+$langmark075 = "CHEERLEADING SQUAD";
+$langmark076 = "This arena belongs to";
+$langmark077 = "This club apparently doesnt care about cheerleaders.";
+$langmark078 = "Here you can present the picture of your cheerleaders.";
+$langmark413 = "Capacity&nbsp;change"; //leave $nbsp; between both words
+
+$langmark142 = "was paid after";
+$langmark143 = "arena";
+$langmark144 = "was put under construction";
+$langmark145 = "Arena is under construction";
+$langmark146 = "Around";
+$langmark147 = "you should be able to use the new capacity";
+
+//BOOKMARKS
+
+$langmark033 = "YOUR BOOKMARKS";
+$langmark034 = "Players";
+$langmark035 = "No players bookmarked";
+$langmark036 = "Coach";
+$langmark037 = "Order by deadline";
+$langmark038 = "check";
+$langmark039 = "remove";
+$langmark040 = "Clubs";
+$langmark041 = "No teams bookmarked";
+$langmark042 = "online";
+$langmark043 = "Matches";
+$langmark044 = "No matches bookmarked";
+$langmark045 = "Leagues";
+$langmark046 = "No leagues bookmarked";
+
+//CLUB
+
+$langmark473 = "Team already bookmarked!";
+$langmark474 = "Team bookmarked!";
+$langmark475 = "TeamID";
+$langmark476 = "Arena";
+$langmark477 = "Bookmark team";
+$langmark478 = "Country";
+$langmark479 = "League";
+$langmark480 = "Fans";
+$langmark481 = "never";
+$langmark482 = "Manager";
+$langmark483 = "Last&nbsp;login";
+$langmark484 = "Last IP";
+$langmark485 = "Joined";
+$langmark486 = "E-mail";
+$langmark487 = "hidden";
+$langmark488 = "Released on";
+$langmark489 = "This manager has not issued any statement.";
+$langmark490 = "This team doesn't have coach.";
+$langmark491 = "Back to club";
+$langmark492 = "Previous matches";
+$langmark493 = "No matches were played.";
+$langmark494 = "Future matches";
+$langmark495 = "No matches scheduled.";
+$langmark496 = "Matches archive";
+$langmark497 = "Visited";
+$langmark498 = "Hosted";
+$langmark499 = "Show flags collected by this club";
+$langmark500 = "Trophy Room";
+$langmark501 = "National Cup";
+$langmark502 = "season";
+$langmark503 = "3-point contest sponsor";
+$langmark504 = "Guestbook";
+$langmark505 = "There are no entries in this guestbook yet.";
+$langmark506 = "View guestbook";
+$langmark507 = "Write in guestbook";
+$langmark508 = "You can't submit empty message!";
+$langmark509 = "Add message";
+$langmark510 = "Club options";
+$langmark511 = "Challenge";
+$langmark512 = "Challenge this team for friendly match.";
+$langmark513 = "Friendly match isn't possible.";
+$langmark514 = "This team is not available for a friendly match.";
+$langmark515 = "Send message";
+$langmark516 = "Personal matters only! To report cheaters or contact gamemasters use"; //relates to "this form"
+$langmark517 = "no subject";
+$langmark518 = "Empty message";
+$langmark519 = "and submit some content";
+$langmark520 = "Message sent!";
+$langmark521 = "New statement";
+$langmark522 = "Change logo";
+$langmark523 = "Change shirt style";
+$langmark524 = "Latest news";
+$langmark525 = "more news";
+$langmark526 = "delete overbid messages";
+$langmark527 = "delete challenge messages";
+$langmark528 = "unknown";
+$langmark529 = "Last message on";
+$langmark530 = "by";
+
+$langmark531 = "Other options";
+$langmark532 = "New team logo";
+$langmark533 = "Logo URL:";
+$langmark534 = "submit";
+$langmark535 = "Cheerleaders picture";
+$langmark536 = "Picture URL:";
+$langmark537 = "Simple rules";
+$langmark538 = "Any picture format is accepted.";
+$langmark539 = "Logos will be resized to a suitable width.";
+$langmark540 = "Offensive logos are not allowed.";
+$langmark541 = "Some association to the cheerleaders is needed (picture).";
+
+$langmark661 = "New shirt color";
+$langmark662 = "black shirt";
+$langmark663 = "black version";
+$langmark664 = "blue shirt";
+$langmark665 = "blue version";
+$langmark666 = "green shirt";
+$langmark667 = "green version";
+$langmark668 = "grey shirt";
+$langmark669 = "grey version";
+$langmark670 = "light blue shirt";
+$langmark671 = "light blue version";
+$langmark672 = "orange shirt";
+$langmark673 = "orange version";
+$langmark674 = "pink shirt";
+$langmark675 = "pink version";
+$langmark676 = "red shirt";
+$langmark677 = "red version";
+$langmark678 = "turquoise shirt";
+$langmark679 = "turquoise version";
+$langmark680 = "violet shirt";
+$langmark681 = "violet version";
+$langmark682 = "white shirt";
+$langmark683 = "white version";
+$langmark684 = "yellow shirt";
+$langmark685 = "yellow version";
+
+//CONTACT FORM
+
+$langmark204 = "CONTACT BASKETSIM GMs";
+$langmark205 = "If you need to contact Basketsim administration, use the form below. But be careful to read the rules (on the right).";
+$langmark206 = "Important!";
+$langmark207 = "For general questions use";
+$langmark208 = "For bug reports use";
+$langmark209 = "game forums";
+$langmark210 = "For rules explanations read";
+$langmark211 = "game rules";
+$langmark212 = "Message too short!";
+$langmark213 = "Your message was accepted! If needed, you will receive an answer to your messages.";
+$langmark214 = "Your message was accepted! You will get reponse as a private message.";
+$langmark215 = "Choose category and write message to GMs";
+$langmark216 = "Cheating case";
+$langmark282 = "Same computer";
+$langmark217 = "Payment issue";
+$langmark218 = "Any other issue";
+$langmark219 = "Send";
+$langmark220 = "Guidelines for contacting GMs";
+$langmark221 = "To report suspicious transfer use";
+$langmark222 = "this form";
+$langmark223 = "and submit ID of a player sold at unrealistic price";
+$langmark224 = "If you need to write more about cheating case or if you would like to report any kind of abuse then use form on the left.";
+$langmark225 = "When you will submit a cheating case dont expect feedback from GMs. You must know that your submition is most welcome and that by reporting cheaters you help the game to be more fair, but GMs dont have time to report back on every case! Dont worry about it, all cheaters will be appropriately punished.";
+
+//FINANCES
+
+$langmark148 = "YOUR MONEY";
+$langmark149 = "Current money";
+$langmark150 = "PREDICTED INCOME";
+$langmark151 = "Sponsors";
+$langmark152 = "Bank interest";
+$langmark153 = "Current bids on your players";
+$langmark154 = "No bids";
+$langmark155 = "PREDICTED EXPENDITURE";
+$langmark156 = "Salaries";
+$langmark157 = "Youth camp";
+$langmark158 = "Cheerleaders";
+$langmark159 = "Bank interest";
+$langmark160 = "Your current bids";
+$langmark161 = "Available money";
+$langmark162 = "Warning!";
+$langmark163 = "You will be in trouble if your negative balance exceeds";
+$langmark164 = "Temporary";
+$langmark165 = "You will receive your money as soon as your team is activated!";
+
+//FRONTPAGE
+
+$langmark542 = "Welcome to Basketsim";
+$langmark543 = "users";
+$langmark544 = "is a neverending basketball challenge"; //relates to Basketsim
+$langmark545 = "Trade players, train them from boys to superstars, compete in national cup and championship, play matches against live opponents and watch them in live mode, take part in basketsim draft.";
+$langmark546 = "Your decisions may bring you success or failure. Whatever it is, you can share your experience on Basketsim forums with users from around the world. Do not hesitate";
+$langmark547 = "request your club now";
+$langmark548 = "and become an important part of your nation's Basketsim community";
+$langmark549 = "Basketsim is free to play";
+$langmark550 = "Click here";
+$langmark551 = "to join now or";
+$langmark552 = "to read manual and get more information about the game.";
+$langmark553 = "Basketsim is currently available in";
+$langmark554 = "countries"; //relates to number of countries, for example "27 countries"
+$langmark555 = "but even users from other countries can join";
+$langmark556 = "Join";
+$langmark557 = "About";
+$langmark558 = "Contact";
+
+$langmark559 = "Contact options";
+$langmark560 = "E-mail address";
+$langmark561 = "For general questions use game forums.";
+$langmark562 = "For rules explanation read";
+$langmark563 = "manual";
+$langmark564 = "For lost password use";
+$langmark565 = "forgot password";
+$langmark566 = "check spam mail";
+$langmark567 = "If you don't get password write to";
+$langmark568 = "If you can't login to Basketim use the form below.";
+$langmark569 = "No user name!";
+$langmark570 = "Invalid e-mail!";
+$langmark571 = "Message too short!";
+$langmark572 = "Invalid username!";
+$langmark573 = "E-mail unknown!";
+$langmark574 = "Username and email don't match!";
+$langmark575 = "Your message was accepted! If needed, you will receive answer to your email.";
+$langmark576 = "User";
+$langmark577 = "Issue";
+$langmark578 = "Closed due to bad login attempts";
+$langmark579 = "Closed due to cheating";
+$langmark580 = "Can't login due to any other reason";
+
+$langmark581 = "Basketsim lost password";
+$langmark582 = "Hello coach!";
+$langmark583 = "We received your request for a new password. You can now login to www.basketsim.com again. If it wasn't you who sent out the request you must still use the new password, but you should report this to basketsim administration.";
+$langmark584 = "New password is:";
+$langmark585 = "Lost password";
+$langmark586 = "Username and e-mail don't match!";
+$langmark587 = "New password was sent to your email address. Don't forget to check spam mail!";
+$langmark588 = "If you can't remember your password use the form below. Insert your in-game username and e-mail provided at registration. If this doesn't help send an mail to the";
+$langmark589 = "Username";
+
+$langmark590 = "REGISTRATION";
+$langmark591 = "Pick username";
+$langmark592 = "Choose password";
+$langmark593 = "Your e-mail address";
+$langmark594 = "Hide e-mail address?";
+$langmark595 = "Your real name";
+$langmark596 = "Choose country";
+$langmark597 = "Choose region";
+$langmark598 = "Full team name";
+$langmark599 = "Short team name";
+$langmark600 = "Arena name";
+$langmark601 = "I want to join Basketsim!";
+$langmark602 = "Basic rules";
+$langmark603 = "You can only control one team!";
+$langmark604 = "All data provided must be correct.";
+$langmark605 = "Choose your country if it's available.";
+$langmark606 = "By registering you agree to";
+$langmark607 = "Terms of Service";
+
+//GENERAL
+
+$langmark111 = "none";
+$langmark096 = "pathetic";
+$langmark097 = "terrible";
+$langmark098 = "poor";
+$langmark099 = "below average";
+$langmark100 = "average";
+$langmark101 = "above average";
+$langmark102 = "good";
+$langmark103 = "very good";
+$langmark104 = "great";
+$langmark105 = "extremely great";
+$langmark106 = "fantastic";
+$langmark107 = "amazing";
+$langmark108 = "extraordinary";
+$langmark1584 = "magnificent";
+$langmark1585 = "phenomenal";
+$langmark1586 = "sensational";
+$langmark1587 = "miraculous";
+$langmark1588 = "legendary";
+$langmark109 = "magical";
+$langmark110 = "perfect";
+
+$langmark226 = "FORUM ACCESS";
+$langmark227 = "Due to misconduct you are banned from the forum until";
+$langmark228 = "LATEST NEWS";
+$langmark229 = "posted by Basketsim at"; //refers to the date of posting, username adiego must be easily replacable with other usernames
+$langmark230 = "less";
+$langmark231 = "more";
+$langmark409 = "back";
+
+//LEAGUES
+
+$langmark166 = "SELECTED LEAGUE";
+$langmark167 = "Standings";
+$langmark168 = "League already bookmarked!";
+$langmark169 = "League bookmarked!";
+$langmark170 = "Team name";
+$langmark171 = "W - L"; //stands for win-lose
+$langmark172 = "for"; //stands for points for
+$langmark173 = "ag."; //stands for points against
+$langmark174 = "Pts"; //stands for points
+$langmark175 = "League";
+$langmark176 = "Results";
+$langmark177 = "Future matches";
+
+$langmark232 = "Stats";
+$langmark233 = "Bookmark";
+$langmark234 = "Last matches";
+$langmark235 = "Statements for this league";
+$langmark236 = "released by"; //relates to the nickname
+$langmark237 = "by";
+$langmark238 = "LEAGUES OVERVIEW";
+$langmark239 = "4th level leagues are available at";
+$langmark240 = "4th and 5th level leagues are available at";
+$langmark241 = "Country";
+$langmark242 = "english name";
+$langmark243 = "local name";
+$langmark244 = "Number of teams";
+$langmark245 = "Number of users";
+$langmark246 = "National Cup of";
+$langmark247 = "Choose another country";
+$langmark248 = "Go";
+$langmark249 = "Events";
+$langmark250 = "server time";
+$langmark251 = "Daily update";
+$langmark252 = "every day";
+$langmark253 = "Fans join";
+$langmark254 = "Monday";
+$langmark255 = "and";
+$langmark256 = "Thursday";
+$langmark257 = "Training";
+$langmark258 = "Growth notice";
+$langmark259 = "Friday";
+$langmark260 = "Weekly update";
+$langmark261 = "League match";
+$langmark262 = "Cup/League/Friendly match";
+
+$langmark263 = "LEAGUE STATS";
+$langmark264 = "Player stats for"; //relates to league
+$langmark265 = "Players with best scoring average";
+$langmark266 = "Players with best 2-points average";
+$langmark267 = "Players with best freethrow average";
+$langmark268 = "Players with best 3-point average";
+$langmark269 = "Players with best rebounding average";
+$langmark270 = "Players with best offensive rebounds average";
+$langmark271 = "Players with best defensive rebounds average";
+$langmark272 = "Players with most blocks per match";
+$langmark273 = "Players with most assists per match";
+$langmark274 = "Players with most steals per match";
+$langmark275 = "Players with most fouls per match";
+$langmark276 = "Players with most turnovers per match";
+$langmark277 = "Scoring";
+$langmark278 = "To qualify, player had to score at least 50 points in the season.";
+$langmark279 = "To qualify, player need more then 30 twopoint attempts in the season.";
+$langmark280 = "To qualify, player need more then 20 freethrow attempts in the season.";
+$langmark281 = "To qualify, player had to pull more then 10 threepoint attempts in the season.";
+$langmark283 = "To qualify, player need more then 25 rebounds in the season.";
+$langmark284 = "To qualify, player need more then 15 offensive rebounds in the season.";
+$langmark285 = "To qualify, player need more then 15 defensive rebounds in the season.";
+$langmark286 = "Other stats";
+$langmark287 = "To qualify, player need at least 2 blocks in the season.";
+$langmark288 = "To qualify, player need more then 10 assists in the season.";
+$langmark289 = "To qualify, player need more then 5 steals in the season.";
+$langmark290 = "Only players with more then 10 fouls in the season can qualify for the list.";
+$langmark291 = "Only players with over 10 turnovers in the season can qualify for the list.";
+$langmark292 = "Additionally";
+$langmark293 = "only players with more then 3 league games in the season can be listed in any of the categories";
+$langmark294 = "These rules were created in order to prevent players with little contribution to be listed as the top league players.";
+$langmark295 = "Choose desired statistical category on the right.";
+$langmark296 = "If you think your player should be listed in one of the categories, but he is not, then he most likely wasn't involved enough in the season to be listed.";
+$langmark297 = "Read";
+$langmark298 = "rules";
+$langmark299 = "on listing players in the league stats";
+$langmark300 = "League stats are updated on Monday and Thursday.";
+$langmark301 = "Stats in this category are not available yet. This can be due to fact that less than three games were played or no player made enough contribution so far to qualify for display.";
+$langmark302 = "Rules";
+$langmark303 = "Choose statistics";
+$langmark304 = "Most points";
+$langmark305 = "2-points average";
+$langmark306 = "Freethrow average";
+$langmark307 = "3-point average";
+$langmark308 = "Total rebounds";
+$langmark309 = "Offensive rebounds";
+$langmark310 = "Defensive rebounds";
+$langmark311 = "Most blocks";
+$langmark312 = "Most assists";
+$langmark313 = "Most steals";
+$langmark314 = "Most fouls";
+$langmark315 = "Most turnovers";
+$langmark316 = "League stats are available to all users thanks to";
+$langmark317 = "basketsim supporter";
+
+$langmark738 = "Bookmark league";
+$langmark739 = "Fixtures";
+$langmark740 = "Played matches";
+
+//MATCHES
+
+$langmark178 = "FRIENDLY MATCHES";
+$langmark179 = "You can play friendly matches when you don't participate in the national cup. Friendly matches are important for training, since every player has to start once in a week to get full training.";
+$langmark180 = "Use the form below to challenge any available team to play friendly match against your team!";
+$langmark181 = "Venue";
+$langmark182 = "Home";
+$langmark183 = "Away";
+$langmark184 = "Challenge!";
+$langmark185 = "Error!";
+$langmark186 = "TeamID must be numeric!";
+$langmark187 = "You can't challenge own team!";
+$langmark188 = "No such team exists.";
+$langmark189 = "This team already have friendly/cup match.";
+$langmark190 = "Received challenge.";
+$langmark191 = "Challenge sent!";
+$langmark192 = "Send another challenge";
+$langmark193 = "You already have friendly/cup match.";
+$langmark194 = "You can check it on your";
+$langmark195 = "matches";
+$langmark196 = "list";
+$langmark197 = "Received challenges";
+$langmark198 = "Opponent";
+$langmark199 = "Options";
+$langmark200 = "Accept";
+$langmark201 = "Reject";
+$langmark202 = "Sent challenges";
+$langmark203 = "Cancel challenge";
+
+$langmark318 = "YOUR MATCHES";
+$langmark319 = "Orders must be set at least 30 minutes before match starts!";
+$langmark320 = "Friendly";
+$langmark321 = "Cup";
+$langmark322 = "Playoff";
+$langmark323 = "orders";
+$langmark414 = "Orders were set";
+$langmark686 = "all matches";
+$langmark687 = "Recent matches";
+
+$langmark324 = "MATCH INFO";
+$langmark325 = "No such match exists";
+$langmark330 = "multiview";
+$langmark331 = "bookmark this match";
+$langmark332 = "add to multiview";
+$langmark333 = "This match is scheduled to be played at";
+$langmark334 = "If you are online at the time, you can watch it in live mode.";
+$langmark335 = "Team info";
+$langmark336 = "Match is taking place at";
+$langmark337 = "spectators are here to see what both teams have to offer"; //relates to number of spectators
+
+$langmark362 = "MATCHES MULTIVIEW";
+$langmark363 = "No matches selected.";
+$langmark364 = "Go to any match page and click multiview icon in order to add match.";
+
+$langmark365 = "NATIONAL CUP";
+$langmark366 = "National cup of"; //relates to country
+$langmark367 = "Round";
+$langmark368 = "go";
+$langmark369 = "Cup rules";
+$langmark370 = "100% random draw.";
+$langmark371 = "Money splits 50% - 50%.";
+$langmark372 = "All teams compete in cup.";
+$langmark373 = "Few lucky teams avoid 1st round.";
+$langmark374 = "Random contester";
+$langmark375 = "No contestants with a logo";
+$langmark376 = "Still in Cup!";
+
+$langmark688 = "This match is scheduled to be played on";
+$langmark689 = "If you're online at the time, you can watch it in live mode.";
+$langmark690 = "The match is over";
+$langmark691 = "Visit club";
+$langmark692 = "Score";
+$langmark693 = "2-points";
+$langmark694 = "3-points";
+$langmark695 = "Assists";
+$langmark696 = "Fouls";
+$langmark697 = "Steals";
+$langmark698 = "Turnovers";
+$langmark699 = "Blocks";
+$langmark700 = "PS"; //stands for points scored, keep it two letters
+$langmark701 = "2P"; //stands for 2-points, keep it two characters
+$langmark702 = "3P"; //stands for 3-points, keep it two characters
+$langmark703 = "FT"; //stands for free throws, keep it two letters
+$langmark704 = "REB"; //stands for rebounds, keep it three letters
+$langmark705 = "AS"; //stands for assists, keep it two letters
+$langmark706 = "FO"; //stands for fouls, keep it two letters
+$langmark707 = "ST"; //stands for steals, keep it two letters
+$langmark708 = "TO"; //stands for turnovers, keep it two letters
+$langmark709 = "BL"; //stands for blocks, keep it two letters
+$langmark710 = "RT"; //stands for rating, keep it two letters
+$langmark711 = "Points Scored";
+$langmark712 = "Free Throws";
+$langmark713 = "Def"; //relates to defensive
+$langmark714 = "Off"; //relates to offensive
+$langmark715 = "Rating";
+$langmark716 = "Balcony";
+$langmark717 = "VIP section";
+$langmark718 = "Total";
+$langmark719 = "Player ratings";
+$langmark720 = "Team tactics";
+$langmark721 = "Statistics for this match are partially unavailable.";
+$langmark722 = "normal";
+$langmark723 = "sprint back on defense";
+$langmark724 = "contest every shot";
+$langmark725 = "block&nbsp;out&nbsp;and&nbsp;rebound";
+$langmark726 = "protect power zone";
+$langmark727 = "wear out opponents";
+$langmark728 = "read the defense";
+$langmark729 = "fast early breaks";
+$langmark730 = "distance shooting";
+$langmark731 = "try to penetrate";
+$langmark732 = "crash the boards";
+$langmark733 = "Full match report";
+$langmark734 = "List of matches";
+$langmark735 = "W"; //stands for win
+$langmark736 = "L"; //stands for lose
+$langmark737 = "preview";
+
+//MESSAGES
+
+$langmark338 = "YOUR MESSAGES";
+$langmark339 = "YOUR MESSAGE";
+$langmark340 = "From";
+$langmark341 = "Subject";
+$langmark342 = "Sent";
+$langmark343 = "Messages";
+$langmark344 = "Received messages";
+$langmark345 = "Sent messages";
+$langmark348 = "To";
+$langmark349 = "Time";
+$langmark350 = "This message was sent by you.";
+$langmark351 = "Manage message";
+$langmark352 = "Back to received";
+$langmark353 = "Reply to sender";
+$langmark354 = "Delete message";
+$langmark355 = "Compose new message";
+$langmark356 = "No such user found.";
+$langmark357 = "Message was left empty.";
+$langmark358 = "Message was sent to user.";
+$langmark359 = "Send to:";
+$langmark360 = "user name";
+$langmark361 = "New message";
+
+//PLAYERS & COACHES
+
+$langmark079 = "This coach has already been signed";
+$langmark080 = "You don't have enough money to hire this coach";
+$langmark081 = "You already have coach!";
+$langmark082 = "You must";
+$langmark083 = "fire him";
+$langmark084 = "in order to hire a new one";
+$langmark085 = "Coach";
+$langmark086 = "was hired";
+$langmark087 = "was paid to him to sign the contract";
+$langmark088 = "Coach hired!";
+$langmark089 = "Don't mess with other teams coaches!";
+$langmark090 = "was fired";
+$langmark091 = "Over and out. Coach fired!";
+$langmark092 = "To the coach market";
+$langmark093 = "Coach already bookmarked!";
+$langmark094 = "Check your";
+$langmark095 = "bookmarks";
+
+$langmark112 = "Bookmark coach";
+$langmark113 = "Age";
+$langmark114 = "Country";
+$langmark115 = "Character";
+$langmark116 = "Height";
+$langmark117 = "Weight";
+$langmark118 = "Wage";
+$langmark119 = "Sign-on value";
+$langmark120 = "Handling";
+$langmark426 = "Ballhandling";
+$langmark121 = "Quickness";
+$langmark122 = "Passing";
+$langmark123 = "Dribbling";
+$langmark124 = "Rebounds";
+$langmark427 = "Rebounding";
+$langmark125 = "Positioning";
+$langmark126 = "Shooting";
+$langmark127 = "Freethrows";
+$langmark428 = "Free throws";
+$langmark128 = "Defense";
+$langmark129 = "Work rate";
+$langmark130 = "Experience";
+$langmark131 = "Motivation";
+$langmark132 = "Back";
+$langmark133 = "Manage coach";
+$langmark134 = "If you are content with this coach you can hire him. But be aware that you wont be asked for confirmation.";
+$langmark135 = "Hire this coach now!";
+$langmark136 = "If you want to hire this coach you must first fire your old coach.";
+$langmark137 = "Coach bookmarked!";
+$langmark138 = "SELECTED COACH";
+$langmark139 = "COACH MARKET";
+$langmark140 = "List of available coaches";
+$langmark141 = "Value";
+
+$langmark377 = "YOUR PLAYERS";
+$langmark378 = "National player of"; //relates to country
+$langmark379 = "years old from"; //example scentence - 19 years old from Slovenia
+$langmark380 = "This player is"; //relates to character
+$langmark381 = "He earns"; //relates to salary
+$langmark382 = "week";
+$langmark383 = "Tiredness";
+$langmark384 = "Playing positions";
+$langmark385 = "click for description";
+$langmark386 = "Point Guard";
+$langmark387 = "Shooting Guard";
+$langmark388 = "Small Forward";
+$langmark389 = "Power Forward";
+$langmark390 = "Center";
+$langmark391 = "Team's smallest player, expected to run team's offense by controlling the ball and making sure that it gets to the right players at the right time.";
+$langmark392 = "Plays off the ball on offense. Expected to create high volume of shots on offense and guard the opponent's best perimeter player on defense.";
+$langmark393 = "Most versatile of all positions. Expected to score from distance, rebound behind taller PF and Center and also have passing responsibilities.";
+$langmark394 = "Plays offense with his back to the basket. Can have more or less impact on defense and rebounding as the center. Not as tall as the center.";
+$langmark395 = "The tallest player on the team with great deal of body mass. The judgment of whether a player is a center or power forward is often highly subjective.";
+$langmark396 = "Essential";
+$langmark397 = "Sort players";
+$langmark398 = "Fatigue";
+$langmark399 = "Check players stats";
+$langmark400 = "Your"; //relates to players
+$langmark401 = "players"; //relates to number of players
+
+$langmark402 = "Player is transfer listed, you can't fire him.";
+$langmark403 = "You can't fire a player who belongs to another team.";
+$langmark404 = "Player";
+$langmark405 = "SELECTED PLAYER";
+$langmark406 = "No such player exists.";
+$langmark407 = "Player already bookmarked!";
+$langmark408 = "Player bookmarked!";
+$langmark410 ="Bookmark player";
+$langmark411 ="Estimated value";
+$langmark412 ="as"; //refers to playing position (for example: 4* as Point Guard)
+
+$langmark415 ="This player is part of team"; //relates to country (national team)
+$langmark416 ="This player belongs to no club.";
+$langmark417 ="This player belongs to";
+$langmark418 ="Currently he is";
+$langmark419 ="energetic";
+$langmark420 ="fresh";
+$langmark421 ="tired";
+$langmark422 ="very tired";
+$langmark423 ="extremely tired";
+$langmark424 ="drained";
+$langmark425 ="exhausted";
+$langmark429 = "Winner of 3-point contest";
+$langmark430 = "Player position";
+$langmark431 = "Starting price";
+$langmark432 = "Current offer";
+$langmark433 = "Offered by";
+$langmark434 = "Deadline has passed!";
+$langmark435 = "MAKE AN OFFER:";
+$langmark436 = "Bid";
+$langmark437 = "End of bidding";
+$langmark438 = "Your club must be confirmed before you are able to bid on players.";
+$langmark439 = "You don't have enough money to bid.";
+$langmark440 = "Deadline has already expired!";
+$langmark441 = "Refresh page";
+$langmark442 = "Price too low!";
+$langmark443 = "Bid set!";
+$langmark444 = "Better price was offered for";
+$langmark445 = "player";
+$langmark446 = "Transfer options";
+$langmark447 = "This player is not for sale at any price.";
+$langmark448 = "Sell player";
+$langmark449 = "Position";
+$langmark450 = "Asking price";
+$langmark451 = "Selling time";
+$langmark452 = "One day";
+$langmark453 = "Two days";
+$langmark454 = "Three days";
+$langmark455 = "Four days";
+$langmark456 = "Five days";
+$langmark457 = "Sell the bastard!";
+$langmark458 = "You must enter the price";
+$langmark459 = "is not numeric";
+$langmark460 = "You can't sell your coach";
+$langmark461 = "Seems like you didn't fill all the forms right.";
+$langmark462 = "Manage player";
+$langmark463 = "Player stats";
+$langmark464 = "Last performance";
+$langmark465 = "Top performance";
+$langmark466 = "Transfer history";
+$langmark467 = "Check transfer history before bidding!";
+$langmark468 = "Call to national team";
+$langmark469 = "Fire this player";
+$langmark470 = "Please confirm your decision.";
+$langmark471 = "Yes, fire him!";
+$langmark472 = "No, don't fire him!";
+
+//PROFILE
+
+$langmark608 = "YOUR PROFILE";
+$langmark609 = "Here you can change your username, password, language and email address.";
+$langmark610 = "Username contains invalid characters. Only english alphabet characters and numbers are allowed.";
+$langmark611 = "Password contains invalid characters. Only english alphabet characters and numbers are allowed.";
+$langmark612 = "Two versions of new password don't match.";
+$langmark613 = "Old password wrong or missing. You must provide old password when you change preferences.";
+$langmark614 = "Username already exists. Please choose another username.";
+$langmark615 = "Wrong email address. Please check your spelling.";
+$langmark616 = "This email address was already provided by another user.";
+$langmark617 = "Username too short. Please choose username with more characters.";
+$langmark618 = "Password too short. For security reasons password must be at least 5 characters long.";
+$langmark619 = "Change username";
+$langmark620 = "Old password";
+$langmark621 = "New password";
+$langmark622 = "Confirm new password";
+$langmark623 = "Choose language";
+$langmark624 = "Save changes";
+$langmark625 = "Here, you can see your supportership status.";
+$langmark626 = "You are supporter for"; //relates to number of days
+$langmark627 = "more days";
+$langmark628 = "You are supporter for 1 more day!";
+$langmark629 = "You can extend your supportership";
+$langmark630 = "here";
+$langmark631 = "Here, supporters can set a forum signature.";
+$langmark632 = "Edit signature";
+$langmark633 = "Signature set";
+
+//SEARCH
+
+$langmark634 = "SEARCH BASKETSIM";
+$langmark635 = "Find team/user";
+$langmark636 = "Search";
+$langmark637 = "Team ID";
+$langmark638 = "Find player/coach";
+$langmark639 = "First name";
+$langmark640 = "Last name";
+$langmark641 = "Player ID";
+$langmark642 = "Find league";
+$langmark643 = "any"; //relates to country
+$langmark644 = "League name";
+$langmark645 = "League ID";
+$langmark646 = "Find match";
+$langmark647 = "Match ID";
+$langmark648 = "Transfer market";
+$langmark649 = "Visit transfer market";
+$langmark650 = "Search results";
+$langmark651 = "No team match your input.";
+$langmark652 = "Team ID must be numeric.";
+$langmark653 = "No team match this ID.";
+$langmark654 = "No user match your input.";
+$langmark655 = "No player match your input.";
+$langmark656 = "Player ID must be numeric.";
+$langmark657 = "No league match your input.";
+$langmark658 = "League ID must be numeric.";
+$langmark659 = "Match ID must be numeric.";
+$langmark660 = "User name";
+
+
+//VARIOUS
+
+$langmark741 = "Reply message";
+$langmark742 = "Receiver";
+$langmark743 = "New statement published!";
+$langmark744 = "Manage statements";
+$langmark745 = "Choose";
+$langmark746 = "No statements.";
+$langmark747 = "Edit";
+$langmark748 = "Delete";
+$langmark750 = "Arena renamed to";
+$langmark751 = "Sunday";
+$langmark752 = "Saturday";
+$langmark753 = "Tuesday";
+$langmark754 = "Wednesday";
+$langmark755 = "FINAL MATCH";
+$langmark756 = "Date";
+$langmark757 = "seats"; //relates to number of seats, for example "5500 seats"
+$langmark758 = "Trophy for winners";
+$langmark759 = "retired player";
+$langmark760 = "View full match report.";
+$langmark761 = "HOME TEAM";
+$langmark762 = "AWAY TEAM";
+$langmark763 = "stable";
+$langmark764 = "entertaining";
+$langmark765 = "calm";
+$langmark766 = "aggressive";
+$langmark767 = "controversial";
+$langmark768 = "selfish";
+$langmark769 = "You can arrange a friendly match on any day outside Tuesday and Wednesday (CET).";
+$langmark770 = "Age"; //use short word here or even abbreviation (4 characters or less)
+$langmark771 = "Player is for sale now!";
+$langmark772 = "Player for sale";
+$langmark773 = "5-time 3-point contest sponsor";
+
+//STATISTICS
+
+$langmark774 = "SUPPORTER STATS";
+$langmark775 = "Top capacity arenas";
+$langmark776 = "Biggest fan clubs";
+$langmark777 = "Top 100 teams";
+$langmark778 = "Low 100 teams";
+$langmark779 = "Top camp stars";
+$langmark780 = "Top scout picks";
+$langmark781 = "Top scoring matches";
+$langmark782 = "Lowest scoring matches";
+$langmark783 = "Most difference";
+$langmark784 = "Most spectators";
+$langmark785 = "Fastest training";
+$langmark786 = "Richest clubs";
+$langmark787 = "Top star ratings (home)";
+$langmark788 = "Top star ratings (away)";
+$langmark789 = "Tallest players";
+$langmark790 = "Top paid players";
+$langmark791 = "Popular training for guards";
+$langmark792 = "teams"; //relates to no. of teams, for example "361 teams"
+$langmark793 = "Weight gain"; //as a training type
+$langmark794 = "Weight loss"; //as a training type
+$langmark795 = "Only teams with training set are counted.";
+$langmark796 = "Popular training for big men";
+$langmark797 = "Your players stats";
+$langmark798 = "General"; //refers to general stats
+$langmark799 = "Average weight";
+$langmark800 = "Average wage";
+$langmark801 = "Average training";
+$langmark802 = "Average tiredness";
+$langmark803 = "Average experience";
+$langmark804 = "Average workrate";
+$langmark805 = "Average star rating";
+$langmark806 = "Achievements";
+$langmark807 = "Most points in a"; //relates to match - "Most points in match"
+$langmark808 = "Most 3-pointers in a"; //relates to 3-pointers - "Most points in match"
+$langmark809 = "Most rebounds in a"; //relates to rebounds - "Most points in match"
+$langmark810 = "Most assists in a"; //relates to assists - "Most points in match"
+$langmark811 = "Most steals in a"; //relates to steals - "Most points in match"
+$langmark812 = "Most blocks in a"; //relates to blocks - "Most points in match"
+$langmark813 = "Most turnovers in a"; //relates to turnovers - "Most points in match"
+$langmark814 = "match"; //used with all previous cases, for example "Most points in match"
+$langmark815 = "Your camp stars by wage";
+$langmark816 = "Top star ratings"; //relates to top number of stars collected by team's starting five in a match
+$langmark817 = "Most spectators in your arena";
+$langmark818 = "Available stats";
+$langmark819 = "TOP TEAMS";
+$langmark820 = "TOP PLAYERS";
+$langmark821 = "TOP MATCHES";
+$langmark822 = "YOUR TEAM";
+$langmark823 = "Ranking";
+$langmark824 = "Wealth";
+$langmark825 = "Capacity";
+$langmark826 = "Fan club";
+$langmark827 = "Home ratings";
+$langmark828 = "Away ratings";
+$langmark829 = "Camp stars by wage";
+$langmark830 = "Camp stars by rating";
+$langmark831 = "Scout picks by wage";
+$langmark832 = "Scout picks by rating";
+$langmark833 = "Training speed";
+$langmark834 = "Highest scoring";
+$langmark835 = "Lowest scoring";
+$langmark836 = "Common for guards"; //relates to common training types
+$langmark837 = "Common for big men"; //relates to common training types
+$langmark838 = "Camp stars";
+$langmark839 = "Crowd"; //relates to spectators
+$langmark840 = "Average age";
+$langmark841 = "Average height";
+
+//SUPPORTER
+
+$langmark842 = "Every game needs resources to exist and improve and Basketsim is no exception. If you choose to support the game you're making the game <b>better</b>. In the same time, your contribution will make the game <b>more fun</b> for you, since you'll be able to enjoy some additional features."; //leave <b></b> in the text, it means bolding the important words
+$langmark843 = "What additonal features do I get for a small contribution towards the game developement?";
+$langmark844 = "You can set up team's logo, that will present your club.";
+$langmark845 = "You get to choose between 86 different shirts for your team and you can even create own shirt design for your team.";
+$langmark846 = "You get to see players faces, how your and other players look like.";
+$langmark847 = "You can bookmark players/coaches, clubs/users, matches and leagues. You can track bookmarked users and check anytime if they are logged in. You can track bookmarked players to see if they are for sale and their deadline.";
+$langmark848 = "Have your own guestbook and write messages to other users!";
+$langmark849 = "When training occurs you see exact amount of training received for your players, presented with a decimal number. This enables you to follow a progression or regression of your players more precisely.";
+$langmark850 = "Every time when one of your youth players grow for a couple of centimeters you get a message from your staff.";
+$langmark851 = "Every season (starting from season 2) supporters compete in <b>International Fair Play Cup</b> and besides all the fun, winner receives Fair Play Cup Trophy!"; //there is no need to translate expression "Fair Play Cup" it can stay in english
+$langmark852 = "You can observe beautiful trophies that you or other managers have won.";
+$langmark853 = "You don't get to see any ads on Basketsim.";
+$langmark854 = "You get Fair Play thumbs up icon next to your user name when posting on forums, so eveyone can see that you support the game!";
+$langmark855 = "You can set up your own forum signature in order to make your community experience even more pleasant!";
+$langmark856 = "You can see statistics on:"; //all next descriptions will relate to this scentence, please check the context at the bottom of supporter page and keep descriptions short
+$langmark857 = "your team (top camp stars, top player achievements, top matches...)";
+$langmark858 = "other teams (top teams, richest, biggest fan clubs, largest arenas...)";
+$langmark859 = "top matches (most and less points in a match, best ratings...)";
+$langmark860 = "top players (top scout picks, top camp stars, top paid players...)";
+$langmark861 = "and much more, here is a"; //relates to next description
+$langmark862 = "screenshot of statistics area"; //scentence continues after previous description
+$langmark863 = "You get to see flags collected on friendly matches.";
+$langmark864 = "Features list";
+$langmark865 = "Team logo";
+$langmark866 = "Shirt styles";
+$langmark867 = "Player faces";
+$langmark868 = "Bookmarks";
+$langmark869 = "Guestbooks"; //you can translate as singular instead of plural
+$langmark870 = "Detailed training";
+$langmark871 = "No ads";
+$langmark872 = "icon";
+$langmark873 = "Forum signature";
+$langmark874 = "Statistics";
+$langmark875 = "Flags"; //relates to flags collected on friendly matches so translate according to this but keep it one word
+$langmark876 = "Become supporter";
+$langmark877 = "Pay using Moneybookers:";
+$langmark878 = "months";
+$langmark879 = "year";
+$langmark880 = "Credit card payment";
+$langmark881 = "Send me a private message for more info.";
+$langmark882 = "Other options are paypal, regular mail or direct bank transfer.";
+$langmark883 = "With Moneybookers you can use credit card or direct bank transfer.";
+$langmark884 = "You must"; //relates to next description
+$langmark885 = "sign for Moneybookers account";
+$langmark886 = "to buy a supporter."; //relates to previous description
+$langmark887 = "BASKETSIM SUPPORTER";
+$langmark888 = "You can also buy supportership using credit card.";
+$langmark889 = "Due to high credit card processing fees this option costs additional 1€. Your payment will be processed soon after purchase is complete, but if you should expereince delay, send a message to basketsim@basketsim.com with an order number and I will activate your supportership.";
+$langmark890 = "INSTRUCTIONS";
+$langmark891 = "Special notice";
+$langmark892 = "users from European Union have to pay tax (VAT) when using this payment method.";
+$langmark893 = "Go back and choose another payment method.";
+$langmark894 = "PAYMENT";
+$langmark895 = "Click one of the options to proced:"; //you can translate "click" as "choose" if needed
+$langmark896 = "Thanks for supporting Basketsim!";
+
+//STAFF
+
+$langmark897 = "YOUR STAFF";
+$langmark898 = "You don't have enough money!";
+$langmark899 = "Medical center";
+$langmark900 = "A Medical Center is an advanced facility which lowers the chances of injuries in your team. But science takes time and you'll have to be patient (and rich) in order to develop a top level medical center.";
+$langmark901 = "Current level:";
+$langmark903 = "Upgrade cost:";
+$langmark904 = "Upgrade time:";
+$langmark905 = "days"; //relates to number of days, for example "10 days"
+$langmark906 = "Upgrade to next level";
+$langmark907 = "Upgrading until"; //relates to date
+$langmark908 = "You have reached the top level!";
+$langmark914 = "Scouting";
+$langmark915 = "There are many free players in basketsim. Some were fired and some were just unable to find a club yet. You can hire a scout to find a decent free agent for you.";
+$langmark916 = "Hire scout";
+$langmark917 = "Quality";
+$langmark918 = "excellent"; //scout level
+$langmark919 = "world class"; //scout level
+$langmark920 = "domestic"; //used for scout search
+$langmark921 = "foreign"; //used for scout search
+$langmark922 = "1 day";
+$langmark923 = "Focus";
+$langmark924 = "Price";
+$langmark925 = "Calculate costs";
+$langmark926 = "Scout is going to search for couple more days";
+$langmark927 = "Scout is going to return in about"; //relates to number of days
+$langmark928 = "top free agents";
+$langmark929 = "Best skill";
+$langmark930 = "TOP FREE AGENTS";
+$langmark931 = "Top 10 free agents by country";
+$langmark932 = "Your free agents";
+$langmark933 = "You haven't signed any free agent yet.";
+
+//adjust translations of medical center levels to your language
+$langmark902 = "non-existant";
+$langmark909 = "broken bones";
+$langmark910 = "cry babies";
+$langmark911 = "brave fighters";
+$langmark912 = "tough guys";
+$langmark913 = "unbreakable";
+
+$langmark934 = "Club";
+$langmark935 = "List of players";
+$langmark936 = "For sale";
+$langmark937 = "1 player is playing for this club.";
+$langmark938 = "players are playing for this club."; //relates to the number of players, for example "12 players are playing for this club."
+
+//3-POINT CONTEST
+
+$langmark939 = "3-POINT CONTEST HISTORY";
+$langmark940 = "Past winners and sponsors (3-point contest Hall of fame)";
+$langmark941 = "Sponsor";
+$langmark942 = "Contest&nbsp;no.";
+$langmark943 = "3-POINT CONTEST";
+$langmark944 = "Currently we are waiting sponsor for next 3-point contest! If you would like to get your club featured (on the right), you are welcome to become the next sponsor of the contest!";
+$langmark945 = "Winners of last contest:";
+$langmark946 = "Winner of last contest:";
+$langmark947 = "Choose a player to compete in the 3-point contest:";
+$langmark948 = "(you can only compete with one player in every contest)"; //leave the brackets!
+$langmark949 = "Go for it!"; //adjust translation according to your language
+$langmark950 = "Top 15 contestants";
+$langmark951 = "Without club";
+$langmark952 = "is shooting threepointers!"; //relates to player, for example "Jake is shooting threepointers!"
+$langmark953 = "Display all contestants";
+$langmark954 = "Display Top 20 contestants";
+$langmark955 = "No players in the contest yet.";
+$langmark956 = "Proceed here";
+$langmark957 = "Click here for his first attempt";
+$langmark958 = "MISS!";
+$langmark959 = "SCORE!";
+$langmark960 = "TOTAL SCORE:";
+$langmark961 = "Click here to see results";
+$langmark962 = "Click here for his next attempt";
+$langmark963 = "Every time when someone decides to give away supporter, 3-point contest starts for whole Basketsim!";
+$langmark964 = "Sponsorship";
+$langmark965 = "Last sponsor";
+$langmark966 = "Current sponsor";
+$langmark967 = "manager of"; //relates to club, for example "manager of Olympiakos"
+$langmark968 = "Last award";
+$langmark969 = "Current award";
+$langmark970 = "months supporter"; //make sure to translate in context (example: "6 months supportership")
+$langmark971 = "To sponsor the next 3-point competition"; //relates to next description
+$langmark972 = "contact me";
+$langmark973 = "Status and Rules";
+$langmark974 = "Status";
+$langmark975 = "Current contest expires in"; //relates to number of days
+$langmark976 = "Current competition has expired.";
+$langmark977 = "Current competition expires in 1 day.";
+$langmark978 = "Rules - skills";
+$langmark979 = "very important";
+$langmark980 = "important";
+$langmark981 = "Rules - other";
+$langmark982 = "If more than one player ends on top, award is split. If more than four players end on top, awards are decided by random draw.";
+$langmark983 = "Past winners";
+$langmark984 = "Speed";
+
+//TERMS
+
+$langmark985 = "Terms of Service";
+$langmark986 = "How to get banned from the game? Here is the list of your possible actions that are likely to result in account closure:";
+$langmark987 = "1. Having or controling two or more teams.";
+$langmark988 = "2. Do any fraud attempts in the game, like buying or selling players for unreasonable price.";
+$langmark989 = "3. Abuse or threat to other users, using forums or private messages.";
+$langmark990 = "Any data collected from users will only be used on Basketsim website. Your data will never be given to the third party. However, it is your responsibility to provide truthful information at registration to avoid deletion.";
+$langmark991 = "Cookies are being used on www.basketsim.com, so that managing your team in web browser is possible. Cookies are stored on your computer, but no informations are ever extracted from you.";
+$langmark992 = "Supporter features don't allow users to break rules, they just provide additional in-game options to the donators. If you are unsatisfied with supporter features, you can request a refund within one week after your purchase.";
+$langmark993 = "Basketsim administrator has the right to adjust or close any account, when he considers that rules were broken or that certain user's behaviour is out of the good spirit of the game.";
+$langmark994 = "In case of inactivity, accounts are kept for 6-7 weeks. The time can vary from country to country.";
+$langmark995 = "This game is available to users of all ages, so any linking to pornographic material within the game is stricktly forbidden and can result in account deletion.";
+$langmark996 = "By playing the game, you accept these conditions. Terms of Service are available to any user and every user should read them. If you don't agree with Terms of Service, than you are advised not to proceed playing this game.";
+
+//PLAYER STATS
+
+$langmark997 = "Stats of"; //relates to player, for example "Stats of Michael Jordan"
+$langmark998 = "No competitive matches yet.";
+
+//TRAINING
+
+$langmark999 = "TRAINING OPTIONS";
+$langmark1000 = "Your current training choice:";
+$langmark1001 = "Intensity:";
+$langmark1002 = "Guards:";
+$langmark1003 = "Big men:";
+$langmark1004 = "Your coach:";
+$langmark1005 = "No coach."; //you can translate it as "you don't have coach"
+$langmark1006 = "You can hire one on"; //relates to next description
+$langmark1007 = "coach market";
+$langmark1008 = "Visit coach market";
+$langmark1009 = "Change training";
+$langmark1010 = "Change intensity";
+$langmark1011 = "leisure (15h/week)";
+$langmark1012 = "normal (25h/week)";
+$langmark1013 = "intense (30h/week)";
+$langmark1014 = "Let them do some work!";
+$langmark1015 = "Hire coach";
+$langmark1016 = "Let's fire him";
+$langmark1017 = "not chosen yet"; //relates to training
+
+//REGISTRATION
+
+$langmark1018 = "This computer or network was banned from Basketsim due to abuse. If you feel like you haven't done anything wrong, send email with good explanation to basketsim@basketsim.com and your registration might be enabled again.";
+$langmark1020 = "It seems that currently there are no clubs available in your country and in such case, the best thing to do is to bookmark Basketsim and try again later. There is no waiting list for Basketsim, because activation procedure is fast.";
+$langmark1021 = "Your username contains invalid characters. You may only use A-z and 0-9.";
+$langmark1022 = "Press back button in your browser to correct the input.";
+$langmark1023 = "Your password contains invalid characters. You may only use A-z and 0-9.";
+$langmark1024 = "Username already exist. Please use back button in your browser and choose another username.";
+$langmark1025 = "Team name already exist. Please use back button in your browser and choose another team name.";
+$langmark1026 = "Username too short! Press back button in your browser to retain your data.";
+$langmark1027 = "Password too short! Press back button in your browser to retain your data.";
+$langmark1028 = "Team name too short! Press back button in your browser to retain your data.";
+$langmark1029 = "Arena name too short! Press back button in your browser to retain your data.";
+$langmark1030 = "Real name too short! Press back button in your browser to retain your data.";
+$langmark1031 = "Wrong email address. Please use back button in your browser and enter valid email address.";
+$langmark1032 = "It seems that currently there are no clubs available in your country and in such case, the best thing to do is to bookmark Basketsim and try again later. There is no waiting list for Basketsim, because activation procedure is fast.";
+$langmark1033 = "You just made a big step towards the great career of a basketball manager! Your registration data was sent to the administrators and will be examined as soon as possible. Soon, your club will get the starting players and receive the starting money. Until then, you can check the game rules, browse through the menus and visit the Basketsim forums.";
+$langmark1034 = "You can now login on the left!";
+$langmark1035 = "Congratulations!";
+$langmark1036 = "Club received. For welcome message click"; //refers to "here" (langmark630)
+$langmark1037 = "REGISTRATION INFO";
+
+//TEAM
+
+$langmark1038 = "This team is without owner.";
+$langmark1039 = "Last match";
+$langmark1040 = "no matches yet";
+$langmark1041 = "1 player is playing for this team.";
+$langmark1042 = "2 players are playing for this team.";
+$langmark1043 = "players are playing for this team."; //relates to any number above 2
+
+//WHOSONLINE
+
+$langmark1044 = "USERS ONLINE";
+$langmark1045 = "These stats are updated from time to time.";
+$langmark1046 = "Top Guards";
+$langmark1047 = "U18 Guards";
+$langmark1048 = "Top Forwards";
+$langmark1049 = "U18 Forwards";
+$langmark1050 = "Top Centers";
+$langmark1051 = "U18 Centers";
+$langmark1052 = "VOTE FOR BASKETSIM";
+$langmark1053 = "New window will open, so I recommend opening links in new tabs. You can vote once per day.";
+
+//TACTICS
+
+$langmark1054 = "TACTICS AND LINEUP";
+$langmark1055 = "Your team is not involved in this match!";
+$langmark1056 = "Each player can only play one position.";
+$langmark1057 = "STARTING FIVE";
+$langmark1058 = "RESERVES";
+$langmark1059 = "Tactical orders";
+$langmark1060 = "Defensive&nbsp;strategy";
+$langmark1061 = "Offensive&nbsp;strategy";
+$langmark1062 = "Use current lineup orders as default:";
+$langmark1063 = "Submit lineup and orders";
+$langmark1064 = "Clear lineup";
+
+//TRANSFERS
+
+$langmark1065 = "Seller";
+$langmark1066 = "Buyer";
+$langmark1067 = "free"; //relates to transfer price
+$langmark1068 = "released";
+$langmark1069 = "Back to player";
+$langmark1070 = "Results of your search";
+$langmark1071 = "No players match your criteria.";
+$langmark1072 = "Use back button in your browser to improve search data.";
+$langmark1073 = "1 player match your criteria.";
+$langmark1074 = "2 players match your criteria.";
+$langmark1075 = "players match your criteria."; //relates to more then 2 players ( example: 25 players match your criteria)
+$langmark1076 = "Deadline"; //don't use much longer word instead
+$langmark1077 = "Belongs to:";
+$langmark1078 = "Previous"; //relates to previous page when browsing players on market
+$langmark1079 = "Next"; //relates to next page when browsing players on market
+
+//YOUTH
+
+$langmark1080 = "YOUTH SECTION";
+$langmark1081 = "Draft sign-up cost you 230.000 &euro;."; //&euro; produces euro sign, leave it as it is
+$langmark1082 = "You signed up for draft.";
+$langmark1083 = "This is wrong amount of money to be invested."; //relates to amount of money invested
+$langmark1084 = "You don't have enough money to make such donation."; //relates to amount of money invested into college
+$langmark1085 = "&euro; was given to college."; //relates to amount of money invested (example: "200.000 € was given to college")
+$langmark1086 = "Your donation was submitted! Principal can't wipe the smile off his face.";
+$langmark1087 = "Every week your club organises the camp for talented players. The quality of possible talent depends on funding.";
+$langmark1088 = "Investment per week:";
+$langmark1089 = "New investment";
+$langmark1090 = "Principal of the nearby college is happy with your 250.000 &euro; donation. He wasn't able to buy a new yacht like planned, but you'll still sign his second best player when the season is over.";
+$langmark1091 = "-";
+$langmark1092 = "Principal of the nearby college is delighted with your 750.000 &euro; donation. Right now, he's cruising around the world on his new yacht, but you'll sign his best player when the season is over.";
+$langmark1093 = "There is a nearby college basketball team. In order to sign one of their most talented players, you must fund the school's activities and infrastructure.";
+$langmark1094 = "Investment per season:";
+$langmark1095 = "Invest now!";
+$langmark1096 = "Get new blood"; //relates to promoting camp players, feel free to change the expression when translating
+$langmark1097 = "Young star has already joined your club this week.";
+$langmark1098 = "Last week's camp was a success!";
+$langmark1099 = "Sign new star!";
+$langmark1100 = "Young player"; //relates to next description
+$langmark1101 = "was picked from the camp.";
+$langmark1102 = "yo"; //relates to age, for example "16yo Miha Remec"
+$langmark1103 = "is now member of your club."; //relates to player, for example "16yo Miha Remec is now memeber of your club"
+$langmark1104 = "Check him out";
+$langmark1105 = "Basketsim draft";
+$langmark1106 = "Signup period has expired.";
+$langmark1107 = "Draft took place on"; //relates to date
+$langmark1108 = "You will be able to signup again next season.";
+$langmark1109 = "Draft sign-up has expired.";
+$langmark1110 = "Draft will occur on"; //relates to date
+$langmark1111 = "You can check top draft candidates"; //translate in such way that scentence will end with "here" (langmark630)
+$langmark1112 = "You have already signed for the draft!";
+$langmark1113 = "Any club can sign for the draft. In the mid-season prospects are sorted by quality and the best players are signed by the weakest teams.";
+$langmark1114 = "Sign up for the draft";
+$langmark1115 = "associated cost:";
+$langmark1116 = 'Money will be taken away as soon as you click "Sign up for draft"!'; //leave single quotes!
+
+//USERBARS
+
+$langmark1117 = "BASKETSIM USERBARS";
+$langmark1118 = "Basketsim userbars are free to use. You can use them as signatures on any forum. By clicking on image with right mouse button and choosing preferences you can get URL to use as a link to the picture. You can also download them to your computer. If you don't know how to link to Basketsim please ask one of the authors (below) how to do it.";
+
+//TRANSFERS
+
+$langmark1119 = "page"; //relates to pages, for example "page 12"
+$langmark1120 = "Details";
+$langmark1121 = "Number of players sold:";
+$langmark1122 = "Total money received:";
+$langmark1123 = "Average money received:";
+$langmark1124 = "Number of players bought:";
+$langmark1125 = "Total money paid:";
+$langmark1126 = "Average money paid:";
+$langmark1127 = "Difference:";
+
+//PLAYERSTATS
+
+$langmark1128 = "Played"; //refers to next descriptions, for example "Played 2 competitive matches"
+$langmark1129 = "competitive match";
+$langmark1130 = "competitive matches"; //two competitive matches
+$langmark1131 = "competitive matches"; //more then two competitive matches
+$langmark1132 = "minutes per game";
+$langmark1133 = "points per game";
+$langmark1134 = "rebounds per game";
+$langmark1135 = "blocks per game";
+$langmark1136 = "assists per game";
+$langmark1137 = "steals per game";
+$langmark1138 = "fouls per game";
+$langmark1139 = "turnovers per game";
+$langmark1140 = "2P average";
+$langmark1141 = "FT average";
+$langmark1142 = "3P average";
+
+//GUESTBOOK
+
+$langmark1143 = "Guestbook of"; //relates to team name (example "Guestbook of Olimpia", you can add generic word like "club" if this means better translation to your language
+$langmark1144 = "You must be"; //relates to next description
+$langmark1145 = "Basketsim supporter";
+$langmark1146 = "in order to add messages."; //relates to previous description, the whole scentance is "You must be Basketsim supporter in order to add messages.";
+$langmark1147 = "This guestbook contains"; //relates to next descriptions
+$langmark1148 = "messages."; //the whole scentence is "This guestbook contains 11 messages"
+$langmark1149 = "messages."; //relates to 2 messages, in most languages it's the same as plural
+$langmark1150 = "This guestbook contains 1 message.";
+$langmark1151 = "Posted by";
+$langmark1152 = "Message";
+$langmark1153 = "out of"; //example: Message 23 out of 25
+$langmark1154 = "This guestbook is empty, but every"; //relates to "supporter"
+$langmark1155 = "supporter";
+$langmark1156 = "can add a message."; //whole scentence is "This guestbook is empty, but every supporter can add a message"
+$langmark1157 = "to add message now (window will open on the right)."; //this scentence starts with "Click here" (langmark550)
+$langmark1158 = "Guestbook posts from:";
+
+//TEAMSTATS
+
+$langmark1159 = "List of your players";
+$langmark1160 = "You have no players in your team yet.";
+$langmark1161 = "As soon as you will have players, you will be able to check their stats.";
+$langmark1162 = "Check player";
+$langmark1163 = "Stats for chosen player";
+$langmark1164 = "Click one of the players on the left to see his stats.";
+$langmark1165 = "This player is not member of your team. Choose one of the listed players to see his stats.";
+
+//TRANSFERS
+
+$langmark1166 = "CHEATER REPORT ERROR";
+$langmark1167 = "CHEATER REPORT SUCCESS";
+$langmark1168 = "Suspicious transfer reported! Thanks for your submition! You won't receive any feedback on it, but be sure that all cheaters will receive appropriate punishment!";
+$langmark1169 = "TOP 25 TRANSFERS";
+$langmark1170 = "TOP 25 IN LAST WEEK";
+$langmark1171 = "LAST 25 TRANSFERS";
+$langmark1172 = "TOP DRAFT CANDIDATES";
+$langmark1173 = "Drafts - season"; //relates to season, for example "Drafts - season 2"
+$langmark1174 = "players were picked."; //relates to number of players, for example "1566 players were picked"
+$langmark1175 = "from"; //realtes to country, this can be included from translation, for example it can be either "18yo, 180cm from Slovenia" or if more suitable for your langauge "18yo, 180cm from country Slovenia"
+$langmark1176 = "Picked by:";
+$langmark1177 = "Show all";
+$langmark1178 = "TOP 100 CLUBS IN BASKETSIM";
+$langmark1179 = "These are the teams which won't get good draft picks";
+$langmark1180 = "teams have signed for Basketsim draft."; //relates to number of teams, for example "1988 teams have signed..."
+$langmark1181 = "Draft was completed.";
+$langmark1182 = "SEARCH FOR PLAYERS";
+$langmark1183 = "Any position"; //don't translate with much longer expressions!
+$langmark1184 = "Any deadline";
+$langmark1185 = "In 2 hours";
+$langmark1186 = "In 4 hours";
+$langmark1187 = "In 8 hours";
+$langmark1188 = "In 16 hours";
+$langmark1189 = "Today";
+$langmark1190 = "Today or tomorrow";
+$langmark1191 = "All in reversed order"; //relates to transferlisted players
+$langmark1192 = "Choose league";
+$langmark1193 = "At least"; //relates to minimum age/wage/height... - check transfer market search form!
+$langmark1194 = "At most"; //relates to minimum age/wage/height... - check transfer market search form!
+$langmark1195 = "Wage per week";
+$langmark1196 = "Current price";
+$langmark1197 = "any character";
+$langmark1198 = "Skills";
+$langmark1199 = "Choose skill"; //keep it as short as possible
+$langmark1200 = "Search now!";
+$langmark1201 = "Clear form";
+$langmark1202 = "There is no global market in Basketsim, in order to find all suitable players you can search by each country. Supporters can use bookmarks in order to track many players and be able to sort them by deadline.";
+$langmark1203 = "Report cheaters";
+$langmark1204 = "Insert ID of player with suspicious price:";
+$langmark1205 = "Report it!";
+$langmark1206 = "or use this form";
+$langmark1207 = "Top transfers";
+$langmark1208 = "Top in last week"; //relates to transfers
+$langmark1209 = "Last transfers";
+$langmark1210 = "Draft candidates";
+
+//MENUS
+
+$langmark1211 = "My team";
+$langmark1212 = "Youth";
+$langmark1213 = "Finances";
+$langmark1214 = "Staff";
+$langmark1215 = "Competitions";
+$langmark1216 = "Multiview";
+$langmark1217 = "3-point contest";
+$langmark1218 = "Community";
+$langmark1219 = "Forums";
+$langmark1220 = "Search";
+$langmark1221 = "Market";
+$langmark1222 = "Supporter";
+$langmark1223 = "Help &amp; Rules"; //leave &amp; sign, it stands for and (&)
+$langmark1224 = "Server time";
+$langmark1225 = "Home"; //relates to home page
+$langmark1226 = "Profile";
+$langmark1227 = "Logout";
+
+//CLUB
+
+$langmark1228 = "Club history";
+$langmark1229 = "In season"; //relates to number of season, check it under club history!
+$langmark1230 = "finished in"; //relates to place in the league, check it under club history!
+$langmark1231 = "place in"; //relates to place in the league and league name, check it under club history; example is "In season 1 Team One finished on 8. place in 3.1."
+$langmark1232 = "won the league"; //this is similar, but it relates to winner of the league, for example "In season 1 Team One won league 3.1."
+$langmark1233 = "were eliminated in the"; //this relates to certain round of national cup
+$langmark1234 = "round of the"; //for example "were eliminated in the 4. round of national cup"
+$langmark1235 = "national cup"; //you will have to adjust the expression to suit the scentence (check the example in previous line!)
+$langmark1236 = "won the";
+$langmark1237 = "National Cup of"; //this and previous expression relates to winner of national cup, for example "In season 1 Veseli Vesoljcki won the national cup of Slovenia"
+$langmark1238 = "On"; //relates to date, for example "On 27.11.2006"
+$langmark1239 = "current manager took over and moved the club to"; //relates to region, for example "On 27.04.2007 current manager took over and moved the club to Stockholm."
+$langmark1240 = "Notable transfers";
+$langmark1241 = "club sold"; //must be translated in context! The example is "On 25.04.2007 club sold player for a record amount of 1.266.770 €."
+$langmark1242 = "club bought"; //must be translated in context! The example is "On 28.04.2007 club bought player for a record amount of 2.000.000 €."
+$langmark1243 = "No notable transfers yet.";
+$langmark1244 = "for a record amount of";
+$langmark1247 = "Upload own shirt";
+$langmark1248 = "You can upload your own shirt design:";
+$langmark1249 = "Upload!";
+$langmark1250 = "File must be an image format.";
+$langmark1251 = "File must be under 10kb size.";
+$langmark1252 = "It must be a shirt!";
+$langmark1253 = "Image is resized so make sure that it doesn't have too much white border.";
+
+//DRAFT
+
+$langmark1271 = "Draft signup expires two weeks before draft starts.";
+$langmark1349 = "Players drafted in last few minutes:";
+$langmark1350 = "Top 100 players picked on draft";
+$langmark1351 = "Players to be picked soon:";
+$langmark1352 = "Draft candidates are announced 14 days before draft. Until then list of top clubs is available.";
+$langmark1353 = "Draft status";
+$langmark1354 = "Teams with 3 or more walkovers are excluded from the draft.";
+$langmark1355 = "League results and league level both have influence on ordering teams.";
+$langmark1356 = "Draft is happening LIVE";
+$langmark1357 = "teams are participating"; //relates to amount of teams, for example "3500 teams are participating"
+$langmark1358 = "pick is made every"; //combines with next langmark
+$langmark1359 = "seconds"; //combines with previous langmark, for example "Player is picked every 20 seconds"
+$langmark1360 = "best player is picked as last";
+$langmark1361 = "Draft ends at";
+$langmark1363 = "draft was completed";
+$langmark1364 = "teams were participating"; //relates to amount of teams, for example "3500 teams were participating"
+$langmark1365 = "players were picked"; //relates to amount of teams, for example "3500 players were picked"
+$langmark1366 = "Next 100 teams to pick:";
+
+//ELECTIONS
+
+$langmark1371 = "Elections start at 00:00 server time. Page is unavailable until then.";
+$langmark1372 = "Submit vote";
+$langmark1373 = "You can vote for whoever you think should be the next national coach";
+$langmark1374 = "Elections expire on"; //relates to date when elections start!
+$langmark1375 = "Vote can be changed until then.";
+$langmark1376 = "If two or more candidates receive the same amount of votes, user who has registered for the game earlier is elected.";
+$langmark1377 = "To vote for a user insert his username or pick a candidate from the list of candidates with most votes.";
+$langmark1378 = "User doesn't exist!";
+$langmark1379 = "User has rejected the option of being elected!";
+$langmark1380 = "You registered to Basketsim after election already started. You can't vote but you will be able to vote in next elections.";
+$langmark1381 = "Elections have expired.";
+$langmark1382 = "You have voted for"; //relates for user, for example "You have voted for Bremen"
+$langmark1383 = "You have voted for user who no longer exist.";
+$langmark1384 = "Vote for user:";
+$langmark1385 = "Vote!";
+$langmark1386 = "Top 10 candidates in random order:";
+$langmark1387 = "Elections are active.";
+$langmark1388 = "Elections have expired.";
+$langmark1389 = "rejected";
+$langmark1390 = "Speech";
+$langmark1391 = "hide";
+$langmark1392 = "Edit your speech:";
+$langmark1393 = "speech";
+$langmark1394 = "accept";
+$langmark1395 = "reject";
+
+//FORUMS
+
+$label[24] = "You can't post an empty message";
+$label[102] = "Edit message:";
+$label[205] = "Add";
+$label[206] = "Edit";
+$label[207] = "Delete";
+$label[208] = "Display";
+$label[209] = "Title";
+$label[210] = "Content";
+$label[510] = "Add";
+$label[511] = "Modify";
+$label[512] = "Send a message";
+$label[513] = "Forums";
+$label[515] = "You are member of:";
+$label[516] = 'Main menu '.'&raquo;';
+$label[517] = "You are not a memeber of any forum";
+$label[518] = 'To be able to read or to post messages on a specific fourm, you have to join the forum first. For this, click on the icon next to forum name.';
+$label[519] = "Join forum";
+$label[520] = "Joined forum successfully";
+$label[521] = "You are already a member of selected forum";
+$label[522] = "Leave forum";
+$label[523] = "Left folder successfully";
+$label[524] = "Previous topics";
+$label[525] = "New topic";
+$label[526] = "Comment";
+$label[527] = "By:";
+$label[528] = "as&nbsp;reply&nbsp;to";
+$label[529] = "For:";
+$label[530] = "Everyone";
+$label[531] = "Reply";
+$label[532] = "General settings";
+$label[533] = "This is a response to the following message:";
+$label[534] = "Jump to page";
+$label[535] = "Jump to the first page";
+$label[536] = "Jump to the last page";
+$label[537] = "You are at the page no. ";
+$label[538] = "Cancel";
+$label[539] = "deleted message ...";
+$label[540] = "Close topic";
+$label[541] = "Topic closed";
+$label[543] = "Yes, I'm sure";
+$label[544] = "Modified by";
+$label[545] = "Previous topics";
+$label[546] = "Mark as read";
+$label[547] = "Jump to the first message of this topic";
+$label[549] = "Forum moderator";
+$label[550] = "Translator";
+$label[551] = "You are not a member of this forum. To be able to post a message in this forum you have to join first.";
+$label[598] = "No";
+$label[599] = "Yes";
+$label[600] = "You left forum.";
+$label[601] = "You have joined confrence.";
+$label[602] = "bold";
+$label[603] = "underline";
+$label[604] = "italic";
+$label[605] = "quote";
+$label[606] = "Click on icon to join the wanted forum.";
+$label[607] = "The order of joining forums will be your priority order.";
+$label[608] = "Basketsim recommends:"; //relates to joining forums
+$label[999] = "Reopen";
+$label[998] = "Unsticky";
+$label[997] = "Make sticky";
+$label[996] = "Delete topic";
+$label[995] = "Move topic";
+$label[994] = "Rename";
+$label[993] = "Close topic";
+$label[992] = "Your message is response to:";
+$label[991] = "Edited by";
+$label[990] = "Forum index";
+$label[989] = "No forums chosen yet.";
+$label[988] = "Click on desired forums to join.";
+$label[987] = "Post thread";
+$label[986] = "Post";
+
+//GENERAL
+
+$langmark1245 = "Check live Basketsim draft now!";
+$langmark1246 = "Past winners"; //relates to list of previous winners of national cup
+$langmark1254 = "NOTEPAD";
+$langmark1255 = "Save your notes";
+$langmark1256 = "Save changes";
+$langmark1257 = "Here supporters can save any data, like information about team, players, training and so on.";
+$langmark1258 = "max.";
+$langmark1259 = "matches"; //relates to max. number of matches, for example "max. 6 matches"
+$langmark1260 = "NT matches"; //link to matches of national teams on multiview page
+$langmark1261 = "You have reached the limit. Remove some matches from multiview to be able to add a new one.";
+$langmark1262 = "There is no confirmation!"; //relates to medical center (check it on staff page)
+$langmark1263 = "Shirt"; //this is for sorting players by shirts, check it on players page
+$langmark1264 = "Check stats"; //also on players page, link to stats of players in your team
+$langmark1265 = "Set numbers"; //this is link to the form for setting up players numbers on players page
+$langmark1266 = "Set numbers!"; //this is for confirmation of the form
+$langmark1267 = "Team value";
+$langmark1268 = "Check MVP players"; //relates to icon on league page
+$langmark1269 = "Born in:"; //used on transfer market search
+$langmark1270 = "There is no global market in Basketsim, in order to find all suitable players you can search by each region. Supporters can use bookmarks in order to track many players and be able to sort them by deadline.";
+$langmark1272 = "Club matches"; //this is link from multiview for national team matches back to multiview for club matches
+$langmark1273 = "View full match report";
+$langmark1274 = "International"; //relates to type of the match (CS/CWS/FP Cup), make sure that expression is not to long
+$langmark1275 = "Region";
+$langmark1367 = "delete all";
+$langmark1368 = "Teams cheerleaders seem to be shy and afraid of cameras.";
+$langmark1369 = "Cheerleaders of"; //relates to cheerleaders of certain club, for example "Cheerleaders of Ljubljanske zvezde"
+$langmark1396 = "Refresh temporary money";
+$langmark1397 = "not enough money to bid"; //this is displayed on finances page under bidding money if current money is lower then -300k
+$langmark1398 = "Bidding money";
+$langmark1399 = "Check the rules"; //relates to the next langmark
+$langmark1400 = "to understand the finances better."; //combines together with previous langmark
+$langmark1401 = "Top 50 squads";
+$langmark1402 = "New challenge";
+$langmark1403 = "No dates for friendly matches are available.";
+$langmark1404 = "It seems your opponent already have friendly/cup match scheduled.";
+$langmark1405 = "It seems you already have friendly/cup match scheduled.";
+$langmark1406 = "is an international competition, where best teams from national leagues compete for the most prestigous title in Basketsim. Matches are played as a playoff series - if teams win once each in the first two games, the third game decides the series."; //relates to Champions series (this expression is original and is not part of translation
+$langmark1407 = "is an international competition, where best teams from national cups compete for a prestigious trophy! Matches are played as a playoff series - if teams win once each in the first two games, the third game decides the series."; //same as above, only for CWS
+$langmark1408 = "Read more";
+$langmark1409 = "Random player statement";
+$langmark1436 = "Train your players to become superstars, compete in national and international cups, watch live matches against your league opponents. Take part in Basketsim draft, get youth stars from camps and colleges.";
+$langmark1437 = "Your decisions may bring you success or failure. Whatever it is, you can share it with other users on Basketsim forums, where hundreds of comments are posted every day.";
+$langmark1438 = "Sign up for free!";
+$langmark1439 = "languages"; //relates to number of languages, for example "40 languages"
+$langmark1440 = "Users from all over the world can join!";
+$langmark1441 = "Every player can only compete once in a 30-day period!";
+$langmark1442 = "Under the leadership of manager"; //check eissa's club history for correct translation :)
+$langmark1443 = "won the World Cup."; //combines with previous langmark
+$langmark1444 = "Coach options"; //under training
+$langmark1445 = "This country was added in later season.";
+$langmark1446 = "WORLD CUP HISTORY";
+$langmark1447 = "1st World Cup - Final Standings";
+$langmark1448 = "World Cup Info";
+$langmark1449 = "Total number of teams";
+$langmark1450 = "Total number of matches";
+$langmark1451 = "Total number of spectators";
+$langmark1452 = "Spectators per match";
+$langmark1453 = "Hosts";
+$langmark1454 = "Best players of the tournament";
+$langmark1455 = "MVP of the tournament";
+$langmark1456 = "MVP of the final";
+$langmark1457 = "Final";
+$langmark1458 = "3rd place match";
+$langmark1459 = "Semifinals";
+$langmark1460 = "Quarterfinals";
+$langmark1461 = "World Cup round 2";
+$langmark1462 = "World Cup round 1";
+$langmark1463 = "World Cup Qualifications";
+$langmark1464 = "History";
+$langmark1465 = "Past duels:";
+$langmark1466 = "These two teams haven't met yet.";
+$langmark1467 = "Coaches lose motivation at the end of the season, so chose wisely when to hire.";
+$langmark1468 = "Cup info";
+$langmark1469 = "Remove all matches"; //relates to multiview
+$langmark1470 = "Switch to NT matches"; //relates to multiview
+$langmark1471 = "BASKETSIM BEST OF BEST";
+$langmark1472 = "Basketsim MVP team"; //check it on MVP page
+$langmark1473 = "MVP of"; //relates to league or country, for example "MVP of 2.1"
+$langmark1474 = "With strong performances"; //langmarks 1774-1478 form one scentance, just adjust them according to your language to reach the same effect
+$langmark1475 = "averaged";
+$langmark1476 = "points and";
+$langmark1477 = "rebounds in season";
+$langmark1478 = "while playing for team";
+$langmark1479 = "Fans were really unhappy at the fact that he eventually left the club.";
+$langmark1480 = "His team";
+$langmark1481 = "eventually finished on place no.";
+$langmark1482 = "in the league.";
+$langmark1483 = "Without a doubt, his contribution was a key to this success!";
+$langmark1484 = "Without his contribution, a team would struggle to keep a safe place in the league!";
+$langmark1485 = "The fans agreed that without his contribution they'd finish in the bottom three.";
+$langmark1486 = "Even his contribution wasn't enough to keep a team outside of the relegation zone!";
+$langmark1487 = "There is no MVP yet for this league";
+$langmark1488 = "MVP per league";
+$langmark1489 = "Ratings are based on season league statistics.";
+$langmark1490 = "This league was added in a later season.";
+$langmark1491 = "Top 1024 teams compete in cup.";
+$langmark1492 = "Fanclub"; //keep it short as possible
+$langmark1493 = "Success!"; //after new shirt is submited
+$langmark1494 = "in"; //for example "# 6 in 1. SKL"
+$langmark1495 = "won the"; //relates to international cup
+$langmark1496 = "played in the final of the"; //for example "played in the final of the Fair Play Cup"
+$langmark1503 = "contact form"; //relates to langmark588, please check
+
+//REGIONS
+
+$langmark1422 = "Users online:";
+$langmark1423 = "Top 10 teams in this region";
+$langmark1424 = "No region was chosen.";
+$langmark1425 = "Teams"; //relates to number of teams
+$langmark1426 = "Users"; //relates to number of users
+$langmark1427 = "unsure";
+$langmark1428 = "show users online";
+$langmark1429 = "switch to top teams";
+$langmark1430 = "has level"; //check regions page when translating
+$langmark1431 = "out of 12 attitude."; //check regions page when translating
+$langmark1432 = "This means that more then"; //check regions page when translating
+$langmark1433 = "This means that less then"; //check regions page when translating
+$langmark1434 = "of all the managers in the region are supporters."; //check regions page when translating
+$langmark1435 = "This means that they are still waiting for their first supporter."; //check regions page when translating
+$langmark1497 = "BASKETSIM REGIONS";
+
+//STAFF
+
+$langmark1291 = "There is no confirmation!"; //for context check the medical centers
+$langmark1292 = "No medical center";
+$langmark1293 = "Medical center at level"; //relates to level, for example: "Medical center at level 4"
+$langmark1294 = "Perfect medical center";
+$langmark1295 = "Bad news! Player has already been signed by another club.";
+$langmark1296 = "You need positive balance to hire scout.";
+$langmark1297 = "Locations:";
+$langmark1298 = "Focused skills:";
+$langmark1299 = "Scouting ability:";
+$langmark1300 = "Feel for the talent:";
+$langmark1301 = "start searching";
+$langmark1302 = "Hire new scout at a cost of"; //relates to amount of money, for example "Hire new scout at a cost of 15.000"
+$langmark1303 = "yes";
+$langmark1304 = "no";
+$langmark1305 = "hire new scout";
+$langmark1306 = "Check"; //relates to last player found
+$langmark1307 = "last player found"; //relates to check (previous langmark) - "Check last player found"
+$langmark1308 = "sign up";
+//the next 5 langmarks form one unit, for the context check the staff page, scouts section
+$langmark1309 = "When you sign a player the search ends and scout is released from the contract. If you are sure you want to sign";
+$langmark1310 = "this player";
+$langmark1311 = "then";
+$langmark1312 = "click here";
+$langmark1313 = "to confirm this decision.";
+//end of combo of 5 langmarks
+$langmark1314 = "Signup costs 1/3 of player's value";
+$langmark1315 = "Search days left:";
+$langmark1316 = "Scout demands";
+$langmark1317 = "for each day of search."; //this and previous langmark combines into: "Scout demands 25.000 for each day of search"
+$langmark1318 = "Maximum time:";
+$langmark1319 = "hire";
+$langmark1320 = "cancel";
+$langmark1347 = "You already made investment this season.";
+$langmark1348 = "Signup expires on"; //relates to date when draft expires
+
+//STATISTICS & INTERNATIONAL
+
+$langmark1286 = "Happiest cheerleaders";
+$langmark1287 = "Current season";
+$langmark1288 = "Highest value";
+$langmark1289 = "Best rating in"; //relates to match - "Best rating in match"
+$langmark1290 = "season"; //should be suitable for such use: "350.000 / season"
+$langmark1321 = "Basketsim statistics";
+$langmark1322 = "NT rankings";
+$langmark1323 = "Below are the links to various Basketsim stats in one place! The purpose is to make browsing statistics easier and even more fun!";
+$langmark1324 = "Team stats";
+$langmark1325 = "League stats";
+$langmark1326 = "Global MVP stats";
+$langmark1327 = "3-point contest history";
+$langmark1328 = "Top global transfers";
+$langmark1329 = "Country stats";
+$langmark1330 = "Supporter stats";
+$langmark1331 = "Forum stats";
+$langmark1332 = "There are more stats available, but since they are server demanding, they are only available to"; //combines with the next langmark!
+$langmark1333 = "supporters"; //combines with the previous langmark!
+$langmark1334 = "Posts in last 3 months:";
+$langmark1335 = "NT rankings";
+$langmark1336 = "Total posts:";
+$langmark1337 = "Your posts:";
+$langmark1338 = "U18 rankings";
+$langmark1362 = "all seasons";
+$langmark1370 = "Players with best average rating";
+$langmark1371 = "Average ratings";
+
+$langmark1410 = "number of matches";
+$langmark1411 = "2-point average";
+$langmark1412 = "2-point percentage";
+$langmark1413 = "freethrow average";
+$langmark1414 = "freethrow percentage";
+$langmark1415 = "3-point average";
+$langmark1416 = "3-point percentage";
+$langmark1417 = "offensive rebounds per game";
+$langmark1418 = "defensive rebounds per game";
+$langmark1419 = "rating per game";
+$langmark1420 = "Whole career";
+$langmark1421 = "NT stats"; //NT stands as an acronym for national teams, use appropriate acronym or you can leave original acronym if it applies to this case
+
+$langmark1498 = "U18 NATIONAL TEAMS FIXTURES";
+$langmark1499 = "Group stage";
+$langmark1500 = "Qualifying stage";
+$langmark1501 = "U18 NATIONAL TEAMS";
+$langmark1502 = "NATIONAL ELECTIONS";
+$langmark1504 = "INTERNATIONAL RANKING";
+$langmark1505 = "Ranking list";
+$langmark1506 = "Pos."; //stands for position, keep it short
+$langmark1507 = "Pts."; //stands for position, keep it short
+$langmark1508 = "About ranking";
+$langmark1509 = "Ranking is influenced by results of the clubs which represent country in international competitions (Champions Series, Cup Winners Series and Fair Play Cup). Points are awarded like this:";
+$langmark1510 = "away win in"; //langmarks 1510-1514 all relate to CS/CWS, check international ranking page
+$langmark1511 = "home win in";
+$langmark1512 = "home/away win in";
+$langmark1513 = "home loss in";
+$langmark1514 = "away loss in";
+$langmark1515 = "Countries above the line have 2 teams ensured in CS and CWS. Countries below the line have 1 team ensured in CWS and unless it's country's first season also 1 team in CS.";
+$langmark1516 = "Ranking is updated every Thursday at 23:00.";
+$langmark1517 = "No money for teams."; //FP Cup page
+$langmark1518 = "All supporters compete in cup.";
+$langmark1519 = "Country statistics";
+$langmark1520 = "Country statistics for"; //relates to country name
+$langmark1521 = "Best teams in current season";
+$langmark1522 = "Best camp stars";
+$langmark1523 = "Best scout picks";
+$langmark1524 = "National Team"; //for example "National Team Greece"
+$langmark1525 = "Won last"; //relates to next description
+$langmark1526 = "competitive matches"; //for example "Won last 15 competitive matches"
+$langmark1527 = "National coach of";
+$langmark1528 = "Player must play at least 1/3 of all league matches to be listed. Players who are no longer playing in that league are not listed. League stats are updated the night after the matches are played.";
+$langmark1529 = "MVP per country";
+$langmark1530 = "NATIONAL TEAMS";
+$langmark1531 = "Final stage"; //relates to World Cup
+$langmark1532 = "Group stages"; //relates to WC
+$langmark1533 = "World Cup round 1";
+$langmark1534 = "World Cup round 2";
+$langmark1535 = "Group"; //for example "Group B"
+$langmark1536 = "3 teams advance from each group.";
+$langmark1537 = "World Cup Qualifications";
+$langmark1538 = "4 teams from each group advance to quaterfinals.";
+$langmark1539 = "Friendly matches";
+$langmark1540 = "Take it easy";
+$langmark1541 = "Play for the crowd";
+$langmark1542 = "Normal attitude";
+$langmark1543 = "Very important match";
+$langmark1544 = "Match of the century";
+$langmark1545 = "NATIONAL TEAM ARENA";
+$langmark1546 = "Welcome"; //relates to username, for example "Welcome Bremen"
+$langmark1547 = "You are national coach of";
+$langmark1548 = "Below you can change national arena. That arena will be set for all future official NT matches and presented on the national team page as the official arena. Friendly matches won't be affected, they will remain in the places where you have arranged them to be played.";
+$langmark1549 = "National arena was changed!";
+$langmark1550 = "NATIONAL TEAMS FIXTURES";
+$langmark1551 = "national team match"; //in the contest "Played 1 national team match"
+$langmark1552 = "national team matches"; //in the contest "Played 2 national team match"
+$langmark1553 = "national team matches"; //in the contest "Played 3 national team match", in most languages there is no difference between this and the previous langmark
+$langmark1554 = "Shirts";
+$langmark1555 = "National coach";
+$langmark1556 = "national team";
+$langmark1557 = "National arena";
+$langmark1558 = "change";
+$langmark1559 = "World Cup Gold Medal";
+$langmark1560 = "World Cup Silver Medal";
+$langmark1561 = "World Cup Bronze Medal";
+$langmark1562 = "No players selected.";
+$langmark1563 = "Players say";
+//below are "players say" statements, feel free to adjust them as long as you keep the right scale
+$langmark1564 = "Things must change for the better!";
+$langmark1565 = "There are issues in this team";
+$langmark1566 = "No comment";
+$langmark1567 = "We hope it will get better soon";
+$langmark1568 = "We are happy with our national coach";
+$langmark1569 = "Our coach is sooooo goooood";
+$langmark1570 = "Our coach is bloody brilliant!";
+$langmark1571 = "We love you coach, please never leave";
+$langmark1572 = "Our coach is greater than Phil Jackson";
+$langmark1573 = "Statement";
+$langmark1574 = "Homepage";
+$langmark1575 = "Elections";
+$langmark1576 = "ongoing!"; //warning for ongoing elections
+$langmark1577 = "List of all matches";
+$langmark1578 = "Lineup set!";
+$langmark1579 = "Lineup contains errors.";
+$langmark1580 = "One of the teams is not available on this date.";
+$langmark1581 = "Lineup and tactics";
+$langmark1582 = "Offense";
+$langmark1583 = "NT options";
+
+//SUPPORTER
+
+$langmark1339 = "You can add statements to your players.";
+$langmark1340 = "You also collect flags for guestbook entries from different countries!";
+$langmark1341 = "Training report";
+$langmark1342 = "country stats (in the same way as the league stats)";
+$langmark1343 = "forum stats (your posts, most active forums...)";
+$langmark1344 = "You have your own notepad within the game.";
+$langmark1345 = "Player's statements";
+$langmark1346 = "Notepad";
+
+//TRAINING
+
+$langmark1276 = "Your coach can access the growth database. To check the stats for any supporter team in Basketsim insert that team's ID below and coach will provide you with the information.";
+$langmark1277 = "Growth report for"; //relates to team, for example "Growth report for Ljubljanske zvezde"
+$langmark1278 = "No growth registered.";
+$langmark1279 = "Hi"; //relates to username, for example "Hi adiego"
+$langmark1280 = "This is analysis of the last training session and below you can see how close to raising a skill players are. The effect of last training is marked with red.";
+$langmark1281 = "At your assistance";
+$langmark1282 = "head coach";
+$langmark1283 = "Fire him";
+$langmark1284 = "Request a training report";
+$langmark1285 = "Check the growth database";
+
+?>

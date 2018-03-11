@@ -1,0 +1,46 @@
+ThumbsUp Changelog
+http://www.geertdedeckere.be/shop/thumbsup/
+
+
+Version 2.1 - November 6th, 2011
+================================
+- Bugfix: fixed error in IE8 in init.min.js.php: "Expected identifier, string or number init.min.js.php".
+- Bugfix: fixed warning about date_default_timezone_set in the admin area.
+- Feature: new config option: "blocked_ips". Allows you to set IP addresses that are blocked from voting any items.
+- Plain text passwords for "admin_users" in the config file are now allowed. Sha1 hashes are still supported too.
+- Admin area: updated jQuery to 1.6.4.
+- Admin area: applied some style tweaks and JavaScript optimizations.
+- Admin area: debug notification if no admin users are created in the config file.
+
+
+Version 2.0 - September 25th, 2010
+==================================
+- Completely rebuilt. Non backwards compatible release. Only the most important new features are mentioned below.
+- Bugfix: set the correct Content-Type header for JSON responses (application/json).
+- Feature: added support for MySQL (and other databases) via PDO. New config options: "database_dsn", "database_user" and "database_pass".
+- Feature: added support for custom table prefixes. New config option: "database_table_prefix".
+- Feature: attempted to simplify the installation process. ThumbsUp no longer relies on a global $thumbsup variable. Created a more robust and convenient way to load the ThumbsUp javascript and stylesheet.
+- Feature: rebuilt admin area. Showing extra vote stats for each item. Added additional filter on "open" status. Added possibility to change the number of up/down votes manually. Added dropdown to change the number of items per page.
+- Feature: added possibility to filter and sort ThumbsUp items.
+- Feature: added possibility to define custom formats to be used for the results in template output. New config option: "default_formats".
+- Feature: added options to integrate with existing user system. New config options: "user_id_check", "user_id_callback" and "user_login_required".
+- Feature: users without javascript enabled now get to see a styled (working) ThumbsUp item.
+- Feature: all templates got tweaked. Some new options added. Added :focus styles. Added basic text squeezing for large numbers that wouldn't fit within the item box.
+- Feature: added fallback support for PHP's native json_encode and json_decode functions.
+- Feature: created a debug mode environment for showing all errors to help fix possible installation problems. New config option: "debug".
+- Feature: upgraded to jQuery 1.4.2.
+
+
+Version 1.1 - August 29th, 2009
+=================================
+- Feature: added pagination to the ThumbsUp admin. New config option: "admin_items_per_page".
+
+
+Version 1.0.1 - July 24th, 2009
+===============================
+- Bugfix: prevented possible multiple clicks by immediately disabling the submit buttons in jquery.js.php. Affected templates: digg-thumbs, mini-thumbs, thumbs-up-down.
+
+
+Version 1.0 - July 19th, 2009
+=============================
+- Initial release.

@@ -1,0 +1,140 @@
+/*
+Copyright (c) 2006, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 0.11.3
+*/
+body {
+   text-align:center;
+}
+
+#doc {
+   *width:57.69em;
+	/*width:870px;*/
+   *width:56.3em; /* IE */
+   /*min-width:870px;*/
+   margin:auto;
+   text-align:left;
+	float: left;
+}
+
+#hd,#bd {margin-bottom:1em;text-align:left;}
+#ft {font-size:77%;font-family:verdana;clear:both;}
+
+/* rules for main templates */
+.yui-t1 #yui-main .yui-b, .yui-t2 #yui-main .yui-b, .yui-t3 #yui-main .yui-b,
+.yui-t4 .yui-b, .yui-t5 .yui-b, .yui-t6 .yui-b {
+	float: left;
+}
+.yui-t1 .yui-b, .yui-t2 .yui-b, .yui-t3 .yui-b, .yui-t4 #yui-main .yui-b, .yui-
+t5 #yui-main .yui-b, .yui-t6 #yui-main .yui-b {float:left;}
+
+/* t1: L160 */
+.yui-t1 #yui-main .yui-b {width:76%;min-width:570px;}
+.yui-t1 .yui-b {width:21.33%;min-width:160px;}
+
+/* t2 & t4: L180 & R180 */
+.yui-t2 #yui-main .yui-b, .yui-t4 #yui-main .yui-b {width:100%;min-
+width:550px;}
+.yui-t2 .yui-b, .yui-t4 .yui-b {width:24%;min-width:180px;}
+
+/* t3 & t6: L300 & R300 */
+.yui-t3 #yui-main .yui-b, .yui-t6 #yui-main .yui-b {width:57.6%;min-
+width:430px;}
+.yui-t3 .yui-b, .yui-t6 .yui-b {width:40%;min-width:300px;}
+
+/* t5: R240 */
+.yui-t5 #yui-main .yui-b {width:65.4%;min-width:490px;}
+.yui-t5 .yui-b {width:32%;min-width:240px;}
+
+/* t7: 750 */
+
+
+
+/*	grid-generic rules for all templates */
+
+/* all modules and grids nested in a grid get floated */
+.yui-g .yui-u, .yui-g .yui-g, .yui-ge .yui-u, .yui-gf .yui-u {
+   float:right;
+   display:inline;   /* IE */
+}
+
+/* float left and kill margin on first for added flex */
+.yui-g .first, .yui-gd .first, .yui-ge .first, .yui-gf .first {float:left; }
+
+/* 2 col */
+.yui-g .yui-u, .yui-g .yui-g {width:49.1%;}
+.yui-g .yui-g .yui-u {width:48.1%;} /* smaller for nested to preserve margins */
+
+/* 3 col */
+.yui-gb .yui-u, .yui-gc .yui-u, .yui-gd .yui-u {
+   float:left; /* need to reverse the order for 3 */
+   margin-left:2%; *margin-left:1.895%;
+   width:32%;
+}
+
+.yui-gb .first, .yui-gc .first, .yui-gd .first {margin-left:0;}
+
+/* colspan 2 */
+.yui-gc .first, .yui-gd .yui-u {width:66%;}
+.yui-gd .first {width:32%;}
+
+/* colspan 3 */
+.yui-ge .yui-u {width:24%;}
+.yui-ge .first, .yui-gf .yui-u {width:74.2%;}
+.yui-gf .first {width:24%;}
+.yui-ge .first {width:74.2%;}
+
+/* self clear floated parent containers */
+#bd:after, .yui-g:after, .yui-gb:after, .yui-gc:after, .yui-gd:after, .yui-
+ge:after, .yui-gf:after
+{content:".";display:block;height:0;clear:both;visibility:hidden;}
+#bd, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {zoom:1;} /* IE */
+
+/* base styles for extending/overriding */
+/* primary tabs */
+.navset {border-bottom:1px solid #F76118;}
+.navset h3, .navset h4 {position:absolute;left:-1000em;margin:0;}
+.navset .hd li em {font-weight:bold;}
+.navset .hd li a {color:#FFCC66;}
+.navset .hd li.on strong, .navset .hd li.on strong a {color:#F76118;} /* selected tab */
+.navset .hd li.on strong {background-color:#FFEBE1;border-bottom:1px solid #FFEBE1;} /* border-color should match selected color */
+.navset .hd li.orphan, .navset .hd li.orphan a {color:#F76118;}
+
+/* bg images, defaults to #999 border-color on white bg */
+.navset .hd li a, .navset .hd li strong {background:#F76118 url(./tr_999.gif) no-repeat top right;}
+.navset .hd li em {background:transparent url(./tl_999.gif) no-repeat;}
+
+/* secondary tabs */
+.navset .bd ul {background-color:#FFEBE1;border-color:#F76118;}
+.navset .bd li, .navset .bd li a {color:#F76118;}
+.navset li.on, .navset li.on strong {font-weight:bold;}
+.navset .bd li {border-color:#F76118;} /* pipe divider */
+
+/* end base styles */
+
+/* Network tab standards, shouldn't change */
+
+/* shared pri and sec */
+.navset {width:100%;} /* IE: width */
+.navset a {text-decoration:none;}
+.navset ul, .navset li {margin:0;padding:0;list-style:none;}
+.navset li {float:left;display:inline;}
+.navset li a:hover {text-decoration:underline;}
+.navset ul:after {clear:both;content:'.';display:block;height:0;visibility:hidden;} /* clear non-IE */
+.navset ul {zoom:1;} /* clear IE */
+
+/* primary tabs */
+.navset .hd ul {font:bold 78%/1.2em verdana;margin-bottom:-1px;padding-left:.3em;position:relative;} /* IE quirks mode: relative */
+.navset .hd li {margin-right:.33em;padding:0;}
+.navset .hd li.on strong a {cursor:default;}
+.navset .hd li a, .navset .hd li strong, .navset .hd li em {display:block;}
+.navset .hd li a, .navset .hd li strong {*display:inline-block;}  /* IE: 100% clickable */
+.navset .hd li em {font-style:normal;padding:.5em .6em;}
+.navset .hd li.orphan, .navset .hd li.orphan a, .navset .hd li.orphan em {background:transparent none;border-width:0;margin:0;}
+
+/* secondary tabs */
+.navset .bd ul {border-top-width:1px;border-top-style:solid;font:78%/1.2em verdana;margin:0;padding:.6em 0 .6em .4em;}
+.navset .bd li {border-left-style:solid;border-left-width:1px;display:inline;padding:0 1em;}
+.navset .bd li.first {padding-left:0;border:0;}
+

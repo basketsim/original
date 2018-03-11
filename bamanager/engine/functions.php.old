@@ -1,0 +1,154 @@
+<?
+
+	$szRecomendedUrl	= "localhost";
+	$szAgentName		= "BAManager 0.1";
+	$BSUSERNAME			= "obsy_";
+	$BSPASSWORD			= "testerman";
+
+	//////////////////////////////////////////////////////////////////////////////////////
+	//	login()
+	//////////////////////////////////////////////////////////////////////////////////////
+	function login()
+	{
+		global $szCookie, $szRecomendedUrl, $szAgentName, $BSUSERNAME, $BSPASSWORD;
+		
+		$u	= $BSUSERNAME;
+		$p	= $BSPASSWORD;
+		
+		$fp	= @fsockopen($szRecomendedUrl, 80, $errno, $errstr, 20);
+		if(!$fp)
+		{
+			return "ERROR";
+		}
+		$szGet	 = "GET /bspp/bspp/bspp.php?option=login&username=$u&password=$p HTTP/1.0\r\n";
+		$szGet	.= "Host: $szRecomendedUrl\r\n";
+		$szGet	.= "User-Agent: $szAgentName \r\n";
+		$szGet	.= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$szGet	.= "Connection: close\r\n\r\n";	
+		$nBytes = @fputs($fp, $szGet);
+		$szResponse	= "";
+		while (!@feof($fp))
+		{
+			$szResponse .= fgets($fp, 1024);
+		}
+		@fclose($fp);
+
+		if(!strstr($szResponse,"200 OK"))
+		{
+			return "ERROR";
+		}
+
+		if(strstr($szResponse,"<ActionSuccessful>False</ActionSuccessful>"))
+		{
+			return "ERROR"; // invalid username and password
+		} 
+
+		// reading cookie from headers
+		$arrTmp	= explode("\r\n",$szResponse);
+		if(is_array($arrTmp))
+		{
+			for($i=0; $i < count($arrTmp); $i++)
+			{
+				if(strstr($arrTmp[$i],":"))
+				{
+					$arrHd	= explode(":",$arrTmp[$i]);
+					if(trim(strtolower($arrHd[0])) == "set-cookie")
+					{
+						$nPos		= strpos($arrHd[1],";");
+						$szCookie	= trim(substr($arrHd[1], 0, $nPos));
+					}
+				}
+			}
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	logout()																			
+	////////////////////////////////////////////////////////////////////////////////////////
+	function logout()
+	{
+		return getResponse("/bspp/bspp/bspp.php?option=logout");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read team details info using the team id											
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getTeamDetails($teamid)
+	{
+		return getResponse("/bspp/bspp/bspp.php?option=teamdetails&teamid=$teamid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read team details info using the user id											
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getTeamDetailsB($userid)
+	{
+		return getResponse("/bspp/bspp/bspp.php?option=teamdetails&userid=$userid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	read arena details info using the arena id											
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getArenaDetails($arenaid)
+	{
+		return getResponse("/bspp/bspp/bspp.php?option=arenadetails&arenaid=$arenaid");
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	check if a BSPP code has been set for the given $u
+	////////////////////////////////////////////////////////////////////////////////////////
+	function checkSecurityCode($u)
+	{
+		$szResponse = getResponse("/bspp/bspp/bspp.php?option=checkbsppcode&username=$u");
+		
+		if(strstr($szResponse,"<ActionSuccessful>True</ActionSuccessful>"))
+		{
+			$szResponse	= explode("<UserID>", $szResponse);
+			$szResponse	= $szResponse[1];
+			$szResponse	= explode("</UserID>", $szResponse);
+			$UserID	= $szResponse[0];
+			return $UserID;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	//	getResponse()																		
+	////////////////////////////////////////////////////////////////////////////////////////
+	function getResponse($szFromPage)
+	{
+		global $szRecomendedUrl, $szCookie, $szAgentName;
+		
+		$fp	= @fsockopen($szRecomendedUrl, 80, $errno, $errstr, 20);
+		if(!$fp)
+		{
+			return "ERROR";
+		}
+		$szGet	 = "GET $szFromPage HTTP/1.0\r\n";
+		$szGet	.= "Host: $szRecomendedUrl\r\n";
+		$szGet	.= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$szGet	.= "Accept-Encoding: gzip, deflate\r\n";
+		$szGet	.= "User-Agent: $szAgentName \r\n";
+		$szGet	.= "Cookie: $szCookie\r\n";
+		$szGet	.= "Connection: close\r\n\r\n";	
+
+		$nBytes = @fputs($fp, $szGet);
+		$szResponse	= "";
+		while (!@feof($fp))
+		{
+			$szResponse .= @fgets($fp, 1024);
+		}
+
+		@fclose($fp);
+		if(!strstr($szResponse,"200 OK"))
+		{
+			return "ERROR";
+		}
+
+		$nPos	= strpos($szResponse,"<?xml");
+		return substr($szResponse, $nPos);
+	}
+?>
